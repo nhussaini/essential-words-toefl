@@ -9,10 +9,13 @@ const Home=()=> (
         </Helmet>
         <div id="home">
             <section>
-                <h1>essential words for the toefl</h1>
+                <h1 className="first">essential</h1>
+                <h1 className="first">words</h1>
+                <h1 className="first">for the</h1>
+                <h1 className="second">toefl</h1>
                 <div className="choice">
-                    <Link to="/learn">learn</Link>
-                    <Link to="/quiz">quiz</Link>
+                    <Link to="/learn" className="play-button learn">learn</Link>
+                    <Link to="/quiz" className="play-button quiz">quiz</Link>
                 </div>
             </section>
         </div>
