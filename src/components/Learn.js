@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';
-
+import { Link } from 'react-router-dom';
 import { BsCardText } from "react-icons/bs";
 
 export default function Learn() {
@@ -13,13 +13,21 @@ export default function Learn() {
         <h1>Study Mode</h1>
          <main className="main-content">
                 <div className="controls">
-                <span className="mdi mdi-card-text"></span>
-                    <h2><span><BsCardText /></span>Flashcards</h2>
-                    <p>progress 1/17</p>
+                    <h2><span className="icon"><BsCardText /></span><span className="card">Flashcards</span></h2>
+                    <div className="progress">
+                        <div className="progress-bar"></div>
+                        <div className="progress-text">
+                        <span className="progress-word">progress</span> <span className="progress-number">1/17</span>
+                        </div>
+                    </div>
+                    
                     <p>
                         <span className="mdi mdi-lightbulb-on-outline mdi-24px lifeline-icon"></span>
                     </p>
-                    <button>quit X</button>
+                    <div className="quit">
+                    <Link to="/" className="quit-button">quit</Link>
+                    </div>
+                    
                 </div>
 
                 <div className="flashcard-container">

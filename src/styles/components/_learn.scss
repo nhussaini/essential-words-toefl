@@ -3,25 +3,85 @@ body{
 }
 
 .main-page{
-    
-
+    color: $darkslategray;
+    margin-top: 4rem;
+    h1{
+        padding-left: 20px;
+    }
     .main-content{
         display: flex;
         justify-content:start;
+        color: $darkslategray;
+        
         
         width: 80%;
         height: 70vh;
+       
         
 
         .controls{
             width: 20%;
             margin-right: 50px;
             margin-left: 20px;
-            background-color: yellow;
+            padding-left: 1rem;
+            background-color: white;
+            h2{
+                margin-top: 1rem;
+            }
+            .icon {
+                color: $darkcyan;
+                font-size: 2rem;
+                margin-right: .5rem;
+                
+            }
+            .card{
+                position: relative;
+                top: -6px;
+            }
+            .progress .progress-bar{
+                height: 1rem;
+                width: 90%;
+                background-color: $lightsteelblue;
+                border-radius: 0.5rem;
+            }
+            .progress{
+                margin-top: 50px;
+                .progress-text{
+                    width: 90%;
+                    display: flex;
+                    justify-content: space-between;
+                    text-transform: uppercase;
+                    margin-top: 5px;
+                }
+            }
+            .quit{
+                
+                cursor: pointer;
+                 width: 90%;
+                 padding: 1rem 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 16rem;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 0.5rem;
+            background-color: #cc6600;
+            .quit-button{
+                text-decoration: none;
+                color: wheat;
+                transition: all .35s linear;
+            }
+           
+            }
+            .quit:hover{
+                background-color: darken($color: #cc6600, $amount: 5%);
+                box-shadow: 1px 1px 1px wheat;
+
+            }
         }
         .flashcard-container{
             width: 60%;
-            background-color: blue;
+            background-color: white;
         }
     }
 }
