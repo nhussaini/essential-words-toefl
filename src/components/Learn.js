@@ -54,11 +54,12 @@ class Learn extends Component  {
 
                 <div className="flashcard-container">
                     <div className="flashcard">
-                        <p>Seletct a lesson to learn</p>
+                        <p>Select a lesson to learn</p>
                     </div>
-                    <div className="flashcards-button">
-                        <button>Previous</button>
-                        <button>Next</button>
+                    <div className="flashcards-buttons">
+                        <Link to="#" className="waves-effect waves-light btn prev-button">previous</Link>
+                        <Link to="#" className="waves-effect waves-light btn next-button">next</Link>
+                        
                     </div>
 
                  </div>
