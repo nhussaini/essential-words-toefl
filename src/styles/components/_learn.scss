@@ -19,32 +19,33 @@ body{
        
         
 
-        .controls{
+        .controls-container{
             width: 20%;
             margin-right: 50px;
             margin-left: 20px;
             padding-left: 1rem;
             background-color: white;
+            border-radius: 5px;
             h2{
                 margin-top: 1rem;
             }
-            .icon {
+            .flashcard-icon {
                 color: $darkcyan;
                 font-size: 2rem;
                 margin-right: .5rem;
                 
             }
-            .card{
+            .flashcard-name{
                 position: relative;
                 top: -6px;
             }
-            .progress .progress-bar{
+            .progress-container .progress-bar{
                 height: 1rem;
                 width: 90%;
                 background-color: $lightsteelblue;
                 border-radius: 0.5rem;
             }
-            .progress{
+            .progress-container{
                 margin-top: 50px;
                 .progress-text{
                     width: 90%;
@@ -61,7 +62,7 @@ body{
                  padding: 1rem 0;
             text-transform: uppercase;
             font-weight: bold;
-            margin-top: 16rem;
+            margin-top: 14rem;
             text-decoration: none;
             text-align: center;
             border-radius: 0.5rem;
@@ -82,6 +83,13 @@ body{
         .flashcard-container{
             width: 60%;
             background-color: white;
+        }
+        .select-container{
+            width: 90%;
+            margin-top: 2rem;
+            .select-lesson{
+                height: 5px;
+            }
         }
     }
 }
