@@ -39,11 +39,7 @@ class Learn extends Component  {
 
       handleChange =(e)=>{
           e.preventDefault();
-         console.log("selected option", e.target.value);
-        // const lesson=e.target.value;
-         if(words.lesson===e.target.value){
-             console.log("yes equal");
-         }
+    
 
           const newWords= words;
           let selectedLesson=[];
@@ -52,8 +48,12 @@ class Learn extends Component  {
               if(newWords[i].lesson === e.target.value){
                   selectedLesson=newWords[i];
               }
-
           }
+
+          const currentWord= selectedLesson.vocabulary[0].word;
+          this.setState({
+              currentWord: currentWord
+          })
           console.log("hopefully!", selectedLesson)
          console.log(newWords);
          
