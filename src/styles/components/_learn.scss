@@ -5,8 +5,9 @@ body{
 .main-page{
     color: $darkslategray;
     margin-top: 4rem;
-    h1{
+    h4{
         padding-left: 20px;
+        font-weight: bolder;
     }
     .main-content{
         display: flex;
@@ -96,6 +97,7 @@ body{
 
 
         .flashcard-container{
+            border-radius: 5px;
             .flashcard{
                 width: 100%;
                 height: 80%;

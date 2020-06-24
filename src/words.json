@@ -1,0 +1,44 @@
+[
+    {"lesson": "lesson 1",
+        "vocabulary":[
+            {
+            "word":"abroad",
+            "optionA": "overseas",
+            "optionB": "quick",
+            "optionC": "praise",
+            "optionD":"unfavorable",
+            "answer": "overseas"
+            },
+            {
+            "word":"sleep",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "answer": "optionC"
+           }
+        ]
+
+    },
+    {"lesson": "lesson 2",
+        "vocabulary":[
+            {
+            "word":"venir",
+            "optionA": "overseas",
+            "optionB": "to come",
+            "optionC": "to go",
+            "optionD":"unfavorable",
+            "answer": "to come"
+            },
+            {
+            "word":"aller",
+            "optionA": "to go",
+            "optionB": "to eat",
+            "optionC": "to run",
+            "optionD":"to sit",
+            "answer": "to"
+           }
+        ]
+
+    }
+]
