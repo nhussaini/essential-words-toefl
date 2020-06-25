@@ -16,7 +16,24 @@
             "optionC": "optionC",
             "optionD":"optionD",
             "answer": "optionC"
+           },
+           {
+            "word":"acceptable",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "answer": "optionC"
+           },
+           {
+            "word":"acclaim",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "answer": "optionC"
            }
+
         ]
 
     },

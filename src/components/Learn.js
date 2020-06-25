@@ -26,6 +26,7 @@ class Learn extends Component  {
             currentWord:null,
             nextWord: null,
             prevWord:null,
+            currentLesson: [],
             numberOfWords:0
         };
       }
@@ -39,37 +40,50 @@ class Learn extends Component  {
 
       handleChange =(e)=>{
           e.preventDefault();
-    
-
           const newWords= words;
           let selectedLesson=[];
-          console.log(newWords[0].lesson);
+          //console.log(newWords[0].lesson);
           for(let i=0; i<newWords.length; i++){
               if(newWords[i].lesson === e.target.value){
                   selectedLesson=newWords[i];
+                  
               }
           }
-
+            console.log("selected lesson is:", selectedLesson);
           const currentWord= selectedLesson.vocabulary[0].word;
-          this.setState({
-              currentWord: currentWord
-          })
-          console.log("hopefully!", selectedLesson)
-         console.log(newWords);
-         
-
-         // const vocabulary = newWords.vocabulary;
-         // const currentWord = vocabulary[0].word;
-        
-        //   this.setState({
-        //       words: vocabulary,
-        //       currentWord: currentWord,
-             
-        //   })
-        
           
+          this.setState({
+              ...this.state,
+              currentWord: currentWord,
+              currentLesson:selectedLesson
+              
+          },(()=>{
+            console.log("call back value=>words from :", this.state.currentLesson);
+            console.log(' callback value=>current word is: ', this.state.currentWord);
 
-      }
+          }))
+           //   console.log("hopefully!", selectedLesson)
+                console.log("synchronous=>words from :", this.state.currentLesson);
+                console.log('current word is: ', this.state.currentWord);
+           //  console.log(newWords); 
+        }
+
+        handleNext=(e)=>{
+            console.log("Next button is clicked");
+            console.log('from handleChange ',this.state.currentLesson);
+
+            const currentWord=this.state.currentWord;
+            
+            
+            let index=this.state.currentLesson.vocabulary.findIndex(obj=>obj.word===currentWord);
+            console.log('hopefully index: ',index);
+            const nextWord= this.state.currentLesson.vocabulary[index+1];
+            this.setState({
+                currentWord:nextWord.word
+            })
+
+
+        }
    
     render(){
     //console.log(this.state);
@@ -96,14 +110,6 @@ class Learn extends Component  {
                         </div>
                     </div>
                     <div className=" input-field col s12 select-container">
-                        {/* <Select
-                         options={this.state.whichLesson.map(lesson=>{
-                             return  
-                         })}
-                         className="select-lesson"
-                         placeholder="Select a lesson"
-                         onChange={this.handleChange}
-                         /> */}
 
                          <select className="browser-default" onChange={this.handleChange}>
                             <option value="">Choose a Lesson</option>
@@ -129,11 +135,10 @@ class Learn extends Component  {
                         this.state.currentWord ? <p>{this.state.currentWord}</p>: <p> Choose a lesson to learn</p>
                         
                     }
-                        <p></p>
                     </div>
                     <div className="flashcards-buttons">
-                        <Link to="#" className="waves-effect waves-light btn prev-button">previous</Link>
-                        <Link to="#" className="waves-effect waves-light btn next-button">next</Link>
+                        <button className="waves-effect waves-light btn prev-button">previous</button>
+                        <button className="waves-effect waves-light btn next-button" onClick={this.handleNext}>next</button>
                         
                     </div>
 
