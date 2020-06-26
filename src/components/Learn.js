@@ -28,7 +28,8 @@ class Learn extends Component  {
             nextWord: null,
             prevWord:null,
             currentLesson: [],
-            numberOfWords:0
+            numberOfWords:0,
+            progress:0
         };
       }
       componentDidMount(){
@@ -85,7 +86,8 @@ class Learn extends Component  {
 
             this.setState({
                 currentWord : nextWord.word,
-                currentWordMeaning : nextWord.meaning
+                currentWordMeaning : nextWord.meaning,
+                progress : this.state.progress + 1
 
             })
 
@@ -101,7 +103,8 @@ class Learn extends Component  {
 
             this.setState({
                 currentWord : prevWord.word,
-                currentWordMeaning : prevWord.meaning
+                currentWordMeaning : prevWord.meaning,
+                progress : this.state.progress - 1
             })
             
 
@@ -131,7 +134,7 @@ class Learn extends Component  {
                     <div className="progress-container">
                         <div className="progress-bar"></div>
                         <div className="progress-text">
-                        <span className="progress-word">progress</span> <span className="progress-number">1/17</span>
+                        <span className="progress-word">progress</span> <span className="progress-number">{this.state.progress}/17</span>
                         </div>
                     </div>
                     <div className=" input-field col s12 select-container">
@@ -160,14 +163,14 @@ class Learn extends Component  {
                         this.state.currentWord ?
                         <div>
                         <p style={{textAlign:"center"}}>{this.state.currentWord}</p>
-                        <p style={{fontWeight:"normal", textTransform:"lowercase"}}>{this.state.currentWordMeaning}</p>
+                        <p style={{fontWeight:"normal", textTransform:"lowercase",fontSize: "large",textAlign:"center"}}>{this.state.currentWordMeaning}</p>
                         </div>
                          : <p> Choose a lesson to learn</p>
                         
                     }
                     </div>
                     <div className="flashcards-buttons">
-                        <button className="waves-effect waves-light btn prev-button" onClick={this.handlePrevious}>previous</button>
+                        <button className="waves-effect waves-light btn prev-button" onClick={this.handlePrevious} disabled>previous</button>
                         <button className="waves-effect waves-light btn next-button" onClick={this.handleNext}>next</button>
                         
                     </div>
