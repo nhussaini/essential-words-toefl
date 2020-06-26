@@ -30,7 +30,8 @@ class Learn extends Component  {
             currentLesson: [],
             numberOfWords:0,
             progress:0,
-            nextButtonDisabled:false
+            nextButtonDisabled:false,
+            prevButtonDisabled: true
         };
       }
       componentDidMount(){
@@ -86,11 +87,13 @@ class Learn extends Component  {
             console.log('hopefully index: ',index);
             const currentWord = this.state.currentLesson.vocabulary[index+1];
             const nextWord = this.state.currentLesson.vocabulary[index+2];
+            const prevWord = this.state.currentLesson.vocabulary[index-1];
 
             this.setState({
                 currentWord : currentWord.word,
                 currentWordMeaning : currentWord.meaning,
                 nextWord : nextWord,
+                prevWord : prevWord,
                 progress : this.state.progress + 1
 
             },
@@ -100,13 +103,7 @@ class Learn extends Component  {
 
         }
 
-        handleDisableButton =()=>{
-            if(this.state.nextWord ===undefined){
-                this.setState({
-                    nextButtonDisabled: true
-                })
-            }
-        }
+        
 
 
         //Handle the previous button
@@ -120,9 +117,31 @@ class Learn extends Component  {
                 currentWordMeaning : prevWord.meaning,
                 prevWord : prevWord,
                 progress : this.state.progress - 1
-            })
+            },
+            this.handleDisableButton
+            )
             
 
+        }
+
+
+        handleDisableButton =()=>{
+            if(this.state.nextWord ===undefined){
+                this.setState({
+                    nextButtonDisabled: true
+                })
+            }
+
+            if(this.state.progress===0 | this.state.prevWord===null){
+                this.setState({
+                    prevButtonDisabled : true,
+                    nextButtonDisabled : false
+                })
+            }else {
+                this.setState({
+                    prevButtonDisabled : false
+                })
+            }
         }
 
 
@@ -189,8 +208,8 @@ class Learn extends Component  {
                         <button
                           className="waves-effect waves-light btn prev-button"
                           onClick={this.handlePrevious}
-                        >
-                         previous
+                          disabled = {this.state.prevButtonDisabled}
+                        >previous
                         </button>
                         <button
                           className="waves-effect waves-light btn next-button"
