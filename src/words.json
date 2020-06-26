@@ -32,6 +32,110 @@
             "optionC": "optionC",
             "optionD":"optionD",
             "meaning": "enthusiastic approval, allowable"
+           },
+           {
+            "word":"adverse",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "meaning": "displeasing, objectionable, unfavorable"
+           },
+           {
+            "word":"aspect",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "meaning": "a part or characteristic of something, facet"
+           },
+           {
+            "word":"attractive",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "meaning": "calling attention to, pleasing"
+           },
+           {
+            "word":"autonomous",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "meaning": "by itself, independent"
+           },
+           {
+            "word":"chronic",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "meaning": "always present, continual"
+           },
+           {
+            "word":"disapproval",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "meaning": "the act of disagreeing, objection"
+           },
+           {
+            "word":"disruptive",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "meaning": "causing confusion and interruption"
+           },
+           {
+            "word":"haphazardly",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "meaning": "having no order or pattern, by chance"
+           },
+           {
+            "word":"intervention",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "meaning": "taking action, involvement"
+           },
+           {
+            "word":"persistent",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "meaning": "continuous, refusing to give up"
+           },
+           {
+            "word":"postpone",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "meaning": "to change to a later time, to delay"
+           },
+           {
+            "word":"valid",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "meaning": "producing a desired result based on truths or facts"
+           },
+           {
+            "word":"withdraw",
+            "optionA": "optionA",
+            "optionB": "optionB",
+            "optionC": "optionC",
+            "optionD":"optionD",
+            "meaning": "to remove, take out"
            }
 
         ]

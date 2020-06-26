@@ -63,7 +63,8 @@ class Learn extends Component  {
               ...this.state,
               currentWord: currentWord,
               currentLesson:selectedLesson,
-              currentWordMeaning:currentWordMeaning
+              currentWordMeaning:currentWordMeaning,
+              progress : 0
               
           },(()=>{
             console.log("call back value=>words from :", this.state.currentLesson);
@@ -94,7 +95,8 @@ class Learn extends Component  {
                 currentWordMeaning : currentWord.meaning,
                 nextWord : nextWord,
                 prevWord : prevWord,
-                progress : this.state.progress + 1
+                progress : this.state.progress + 1,
+                
 
             },
             this.handleDisableButton
@@ -116,6 +118,7 @@ class Learn extends Component  {
                 currentWord : prevWord.word,
                 currentWordMeaning : prevWord.meaning,
                 prevWord : prevWord,
+                
                 progress : this.state.progress - 1
             },
             this.handleDisableButton
@@ -129,6 +132,11 @@ class Learn extends Component  {
             if(this.state.nextWord ===undefined){
                 this.setState({
                     nextButtonDisabled: true
+                })
+            }
+            else{
+                this.setState({
+                    nextButtonDisabled:false
                 })
             }
 
@@ -166,7 +174,9 @@ class Learn extends Component  {
                     <h5><span className="flashcard-icon"><BsCardText /></span><span className="flashcard-name">Flashcards</span></h5>              
 
                     <div className="progress-container">
-                        <div className="progress-bar"></div>
+                        <div className="">
+                        <progress max="16" value={this.state.progress} style={{width: "80%", height:"30px"}}></progress>
+                        </div>
                         <div className="progress-text">
                         <span className="progress-word">progress</span> <span className="progress-number">{this.state.progress}/17</span>
                         </div>
