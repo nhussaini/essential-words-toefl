@@ -84,13 +84,31 @@ class Learn extends Component  {
             const nextWord = this.state.currentLesson.vocabulary[index+1];
 
             this.setState({
-                currentWord:nextWord.word,
+                currentWord : nextWord.word,
                 currentWordMeaning : nextWord.meaning
 
             })
 
 
         }
+
+
+        //Handle the previous button
+        handlePrevious=(e)=>{
+            const currentWord=this.state.currentWord;
+            const index= this.state.currentLesson.vocabulary.findIndex(option=>option.word===currentWord);
+            const prevWord =this.state.currentLesson.vocabulary[index-1];
+
+            this.setState({
+                currentWord : prevWord.word,
+                currentWordMeaning : prevWord.meaning
+            })
+            
+
+        }
+
+
+
    
     render(){
     //console.log(this.state);
@@ -149,7 +167,7 @@ class Learn extends Component  {
                     }
                     </div>
                     <div className="flashcards-buttons">
-                        <button className="waves-effect waves-light btn prev-button">previous</button>
+                        <button className="waves-effect waves-light btn prev-button" onClick={this.handlePrevious}>previous</button>
                         <button className="waves-effect waves-light btn next-button" onClick={this.handleNext}>next</button>
                         
                     </div>
