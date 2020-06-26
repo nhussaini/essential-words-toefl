@@ -29,13 +29,15 @@ class Learn extends Component  {
             prevWord:null,
             currentLesson: [],
             numberOfWords:0,
-            progress:0
+            progress:0,
+            nextButtonDisabled:false
         };
       }
       componentDidMount(){
           const whichLesson=words.map(word=> word);
           this.setState({
-              whichLesson: whichLesson
+              whichLesson: whichLesson,
+              disabledButton : true
           });
 
       }
@@ -77,21 +79,33 @@ class Learn extends Component  {
             console.log("Next button is clicked");
             console.log('from handleChange ',this.state.currentLesson);
 
-            const currentWord=this.state.currentWord;
+            const oldWord=this.state.currentWord;
             
             
-            let index=this.state.currentLesson.vocabulary.findIndex(obj=>obj.word===currentWord);
+            let index=this.state.currentLesson.vocabulary.findIndex(obj=>obj.word===oldWord);
             console.log('hopefully index: ',index);
-            const nextWord = this.state.currentLesson.vocabulary[index+1];
+            const currentWord = this.state.currentLesson.vocabulary[index+1];
+            const nextWord = this.state.currentLesson.vocabulary[index+2];
 
             this.setState({
-                currentWord : nextWord.word,
-                currentWordMeaning : nextWord.meaning,
+                currentWord : currentWord.word,
+                currentWordMeaning : currentWord.meaning,
+                nextWord : nextWord,
                 progress : this.state.progress + 1
 
-            })
+            },
+            this.handleDisableButton
+            )
 
 
+        }
+
+        handleDisableButton =()=>{
+            if(this.state.nextWord ===undefined){
+                this.setState({
+                    nextButtonDisabled: true
+                })
+            }
         }
 
 
@@ -104,6 +118,7 @@ class Learn extends Component  {
             this.setState({
                 currentWord : prevWord.word,
                 currentWordMeaning : prevWord.meaning,
+                prevWord : prevWord,
                 progress : this.state.progress - 1
             })
             
@@ -169,11 +184,23 @@ class Learn extends Component  {
                         
                     }
                     </div>
+                    {this.state.currentWord ?
                     <div className="flashcards-buttons">
-                        <button className="waves-effect waves-light btn prev-button" onClick={this.handlePrevious} disabled>previous</button>
-                        <button className="waves-effect waves-light btn next-button" onClick={this.handleNext}>next</button>
+                        <button
+                          className="waves-effect waves-light btn prev-button"
+                          onClick={this.handlePrevious}
+                        >
+                         previous
+                        </button>
+                        <button
+                          className="waves-effect waves-light btn next-button"
+                          onClick={this.handleNext}
+                          disabled ={this.state.nextButtonDisabled}
+                          >next</button>
                         
                     </div>
+                    :null }
+
 
                  </div>
          </main>
