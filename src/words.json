@@ -7,15 +7,15 @@
             "optionB": "quick",
             "optionC": "praise",
             "optionD":"unfavorable",
-            "answer": "overseas"
+            "meaning": "overseas"
             },
             {
-            "word":"sleep",
+            "word":"abrupt",
             "optionA": "optionA",
             "optionB": "optionB",
             "optionC": "optionC",
             "optionD":"optionD",
-            "answer": "optionC"
+            "meaning": "quick, without warning"
            },
            {
             "word":"acceptable",
@@ -23,7 +23,7 @@
             "optionB": "optionB",
             "optionC": "optionC",
             "optionD":"optionD",
-            "answer": "optionC"
+            "meaning": "allowable, satisfactory"
            },
            {
             "word":"acclaim",
@@ -31,7 +31,7 @@
             "optionB": "optionB",
             "optionC": "optionC",
             "optionD":"optionD",
-            "answer": "optionC"
+            "meaning": "enthusiastic approval, allowable"
            }
 
         ]
@@ -45,7 +45,7 @@
             "optionB": "to come",
             "optionC": "to go",
             "optionD":"unfavorable",
-            "answer": "to come"
+            "meaning": "to come"
             },
             {
             "word":"aller",
@@ -53,7 +53,7 @@
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "answer": "to"
+            "meaning": "to"
            }
         ]
 

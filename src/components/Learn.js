@@ -24,6 +24,7 @@ class Learn extends Component  {
             whichLesson:[],
             words:[],
             currentWord:null,
+            currentWordMeaning:null,
             nextWord: null,
             prevWord:null,
             currentLesson: [],
@@ -51,11 +52,14 @@ class Learn extends Component  {
           }
             console.log("selected lesson is:", selectedLesson);
           const currentWord= selectedLesson.vocabulary[0].word;
+          const currentWordMeaning=selectedLesson.vocabulary[0].meaning;
+          
           
           this.setState({
               ...this.state,
               currentWord: currentWord,
-              currentLesson:selectedLesson
+              currentLesson:selectedLesson,
+              currentWordMeaning:currentWordMeaning
               
           },(()=>{
             console.log("call back value=>words from :", this.state.currentLesson);
@@ -77,9 +81,12 @@ class Learn extends Component  {
             
             let index=this.state.currentLesson.vocabulary.findIndex(obj=>obj.word===currentWord);
             console.log('hopefully index: ',index);
-            const nextWord= this.state.currentLesson.vocabulary[index+1];
+            const nextWord = this.state.currentLesson.vocabulary[index+1];
+
             this.setState({
-                currentWord:nextWord.word
+                currentWord:nextWord.word,
+                currentWordMeaning : nextWord.meaning
+
             })
 
 
@@ -132,7 +139,12 @@ class Learn extends Component  {
 
                 <div className="flashcard-container">
                     <div className="flashcard">{
-                        this.state.currentWord ? <p>{this.state.currentWord}</p>: <p> Choose a lesson to learn</p>
+                        this.state.currentWord ?
+                        <div>
+                        <p style={{textAlign:"center"}}>{this.state.currentWord}</p>
+                        <p style={{fontWeight:"normal", textTransform:"lowercase"}}>{this.state.currentWordMeaning}</p>
+                        </div>
+                         : <p> Choose a lesson to learn</p>
                         
                     }
                     </div>
