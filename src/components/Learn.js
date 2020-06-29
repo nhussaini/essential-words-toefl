@@ -64,9 +64,11 @@ class Learn extends Component  {
               currentWord: currentWord,
               currentLesson:selectedLesson,
               currentWordMeaning:currentWordMeaning,
-              progress : 0
+              progress : 0,
+              prevWord : null
               
           },(()=>{
+              this.handleDisableButton();
             console.log("call back value=>words from :", this.state.currentLesson);
             console.log(' callback value=>current word is: ', this.state.currentWord);
 
@@ -77,6 +79,8 @@ class Learn extends Component  {
            //  console.log(newWords); 
         }
 
+
+       //handle the next button
         handleNext=(e)=>{
             console.log("Next button is clicked");
             console.log('from handleChange ',this.state.currentLesson);
@@ -113,11 +117,13 @@ class Learn extends Component  {
             const currentWord=this.state.currentWord;
             const index= this.state.currentLesson.vocabulary.findIndex(option=>option.word===currentWord);
             const prevWord =this.state.currentLesson.vocabulary[index-1];
+            const nextWord =  this.state.currentLesson.vocabulary[index];
 
             this.setState({
                 currentWord : prevWord.word,
                 currentWordMeaning : prevWord.meaning,
                 prevWord : prevWord,
+                nextWord : nextWord,
                 
                 progress : this.state.progress - 1
             },
