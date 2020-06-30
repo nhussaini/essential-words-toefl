@@ -287,140 +287,140 @@
     {"lesson": "lesson 3",
         "vocabulary":[
             {
-            "word":"advantage",
+            "word":"alter",
             "optionA": "overseas",
             "optionB": "to come",
             "optionC": "to go",
             "optionD":"unfavorable",
-            "meaning": "benefit, something that may help one to be successful"
+            "meaning": "to change or make different"
             },
             {
-            "word":"advent",
+            "word":"analyze",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "the coming or appearance of something"
+            "meaning": "to study someting carefully, to examine"
            },
            {
-            "word":"agile",
+            "word":"ancient",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "able to move in a quick and easy way"
+            "meaning": "very old"
            },
            {
-            "word":"albeit",
+            "word":"annoying",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "in spite of the facts, although"
+            "meaning": "disturbing to a person, a slight bother"
            },
            {
-            "word":"appealing",
+            "word":"anticipate",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "attractive, or interesting"
+            "meaning": "predict, to think about or prepare for someting ahead of time"
            },
            {
-            "word":"celebrated",
+            "word":"ascertain",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "acclaimed, well-known and popular"
+            "meaning": "to discover, to find out"
            },
            {
-            "word":"circumvent",
+            "word":"benign",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "to avoid, to evade"
+            "meaning": "doing no harm or damage, gentle"
            },
            {
-            "word":"collide",
+            "word":"confrom",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "to hit one object against another with violent force, to crash"
+            "meaning": "to follow established rules or patterns of behaviour"
            },
            {
-            "word":"contemporary",
+            "word":"enrich",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "modern, current"
+            "meaning": "to make rich, to make something of greater value"
            },
            {
-            "word":"distribute",
+            "word":"intensify",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "to divide among people, to give out"
+            "meaning": "to make stronger in feeling or quality, to heighten"
            },
            {
-            "word":"encourage",
+            "word":"intolerable",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "to promote, to stimulate"
+            "meaning": "unbearable, difficult or painful to experience"
            },
            {
-            "word":"energetic",
+            "word":"ongoing",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "full of life, action or power, vigorous"
+            "meaning": "current, continuing"
            },
            {
-            "word":"frail",
+            "word":"potential",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "weak in health, or in body"
+            "meaning": " an ability, happening, or opportunity that has not occurred or been developed"
            },
            {
-            "word":"heyday",
+            "word":"propose",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "a high point of success,or abundance"
+            "meaning": "to suggest or plan to do something"
            },
            {
-            "word":"myth",
+            "word":"restore",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "an invented story or idea"
+            "meaning": "to give back or bring back something; to return to the original condition revitalize"
            },
            {
-            "word":"refine",
+            "word":"turbulent",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "to make pure, to improve"
+            "meaning": "disturbed, chaotic"
            },
            {
-            "word":"worthwile",
+            "word":"vital",
             "optionA": "to go",
             "optionB": "to eat",
             "optionC": "to run",
             "optionD":"to sit",
-            "meaning": "value in doing something, rewarding"
+            "meaning": "of great importance, indispensable"
            }
            
 
