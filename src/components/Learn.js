@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { BsCardText } from "react-icons/bs";
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 //import Select from 'react-select'
 
 import words from '../../src/words.json';
@@ -181,7 +182,7 @@ class Learn extends Component  {
 
                     <div className="progress-container">
                         <div className="">
-                        <progress max="16" value={this.state.progress} style={{width: "80%", height:"30px"}}></progress>
+                        <progress max="16" value={this.state.progress} style={{width: "90%", height:"30px"}}></progress>
                         </div>
                         <div className="progress-text">
                         <span className="progress-word">progress</span> <span className="progress-number">{this.state.progress}/17</span>
@@ -209,16 +210,26 @@ class Learn extends Component  {
                 </div>
 
                 <div className="flashcard-container">
-                    <div className="flashcard">{
+                    <TransitionGroup className="flashcard">
+                    <CSSTransition
+                            key={this.state.currentWord}
+                            timeout={100}
+                            classNames="fade"
+                        >{
                         this.state.currentWord ?
+                        
                         <div>
                         <p style={{textAlign:"center"}}>{this.state.currentWord}</p>
                         <p style={{fontWeight:"normal", textTransform:"lowercase",fontSize: "large",textAlign:"center"}}>{this.state.currentWordMeaning}</p>
                         </div>
+                        
                          : <p> Choose a lesson to learn</p>
+                         
                         
                     }
-                    </div>
+                    </CSSTransition>
+                    
+                    </TransitionGroup>
                     {this.state.currentWord ?
                     <div className="flashcards-buttons">
                         <button
