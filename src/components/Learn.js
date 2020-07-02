@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+
 import { BsCardText } from "react-icons/bs";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 //import Select from 'react-select'
@@ -204,7 +204,8 @@ class Learn extends Component  {
                     </div>
                     
                     <div className="quit">
-                    <Link to="/" className="quit-button">quit</Link>
+                    {/* <button to="/" className="quit-button">quit</button> */}
+                    <a class="waves-effect waves-light btn quit-button" href="/">quit</a>
                     </div>
                     
                 </div>

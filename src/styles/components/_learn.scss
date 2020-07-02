@@ -21,7 +21,7 @@ body{
         
 
         .controls-container{
-            width: 20%;
+            width: 30%;
             margin-right: 50px;
             margin-left: 20px;
             padding-left: 1rem;
@@ -42,7 +42,7 @@ body{
             }
             .progress-container .progress-bar{
                 height: 1rem;
-                width: 90%;
+                width: 50%;
                 background-color: $lightsteelblue;
                 border-radius: 0.5rem;
             }
@@ -63,23 +63,19 @@ body{
                  padding: 1rem 0;
             text-transform: uppercase;
             font-weight: bold;
-            margin-top: 14rem;
+            
             text-decoration: none;
             text-align: center;
             border-radius: 0.5rem;
-            background-color: #cc6600;
+            
             .quit-button{
                 text-decoration: none;
-                color: wheat;
+                color: whitesmoke;
                 transition: all .35s linear;
             }
            
             }
-            .quit:hover{
-                background-color: darken($color: #cc6600, $amount: 5%);
-                box-shadow: 1px 1px 1px wheat;
-
-            }
+            
         }
         .flashcard-container{
             width: 60%;
@@ -142,11 +138,120 @@ body{
                 }
 
                 .next-button{
-                    color: wheat;
+                    color: whitesmoke;
                     background-color: $darkcyan;
                     font-weight: bold;
                 }
             }
         }
     }
+}
+
+
+
+@media(max-width: 414px){
+    .main-page{
+        h4{
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+
+
+        .main-content{
+            display: flex;
+            justify-content:start;
+            color: $darkslategray;
+            
+            
+            width: 95%;
+            height: 60vh;
+           
+            
+    
+            .controls-container{
+                width: 35%;
+                margin-right: 10px;
+                
+                
+                
+                .flashcard-icon {
+                    color: $darkcyan;
+                    font-size: 2rem;
+                    margin-left: 1.8rem;
+                    
+                }
+                .flashcard-name{
+                    font-size: medium;
+                    font-weight: bold;
+                }
+             
+                .progress-container{
+                    .progress-text{
+                        .progress-word{
+                            font-weight: bold;
+                            font-size: x-small;
+                        }
+                        .progress-number{
+                            font-size: x-small;
+                        }
+                    }
+                }
+                
+            }
+            .flashcard-container{
+                width: 65%;
+            }
+    
+            .flashcard-container{
+                .flashcard{
+                text-align: center;
+                font-size: x-large;
+              
+    
+                    /*fade enter*/
+                    .fade-enter{
+                        opacity: 0;
+                        z-index: 1;
+                    }
+                    .fade-enter.fade-enter-active {
+                        opacity: 1;
+                        transition: opacity 100ms ease-out;
+                    }
+    
+                    /* exit */
+                    .fade-exit{
+                        opacity: 1;
+                    }
+                    .fade-exit.fade-exit-active{
+                        opacity: 0;
+                        transition: opacity 100ms ease-out;
+                    }
+                    .fade-exit-done{
+                        opacity: 0;
+                    }
+    
+                    
+                }
+                .flashcards-buttons{
+                    display: flex;
+                    justify-content:space-evenly;
+                    .prev-button{
+                        color: whitesmoke;
+                        background-color: $yellowgreen;
+                        font-weight: bold;
+                    }
+    
+                    .next-button{
+                        color: whitesmoke;
+                        background-color: $darkcyan;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+
 }
