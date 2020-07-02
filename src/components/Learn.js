@@ -220,7 +220,7 @@ class Learn extends Component  {
                         this.state.currentWord ?
                         
                         <div>
-                        <p style={{textAlign:"center"}}>{this.state.currentWord}</p>
+                        <p style={{textAlign:"center"}} className="current-word">{this.state.currentWord}</p>
                         <p style={{fontWeight:"normal", textTransform:"lowercase",fontSize: "large",textAlign:"center"}}>{this.state.currentWordMeaning}</p>
                         </div>
                         
