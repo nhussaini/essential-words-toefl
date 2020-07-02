@@ -13,13 +13,8 @@ body{
         display: flex;
         justify-content:start;
         color: $darkslategray;
-        
-        
         width: 80%;
         height: 70vh;
-       
-        
-
         .controls-container{
             width: 30%;
             margin-right: 50px;
@@ -33,8 +28,7 @@ body{
             .flashcard-icon {
                 color: $darkcyan;
                 font-size: 2rem;
-                margin-right: .5rem;
-                
+                margin-right: .5rem; 
             }
             .flashcard-name{
                 position: relative;

@@ -38,13 +38,16 @@ class Quiz extends Component{
                     </div>
 
 
-                    <div className="question-container">
+                    <div className="word-container">
+                        <div className="word">
                         <p className="question">abroad</p>
-                        <div className="answer-container">
-                            <div className="anwer-A">overseas</div>
-                            <div className="anwer-B">on the plane</div>
-                            <div className="anwer-C">in the city</div>
-                            <div className="anwer-D">far</div>
+                        </div>
+                        
+                        <div className=" row answer-container">
+                            <div className="col s12 m6  answer"><p>overseas</p></div>
+                            <div className="col s12 m6  answer"><p>on the plane</p></div>
+                            <div className="col s12 m6  answer"><p>in the city</p></div>
+                            <div className="col s12 m6  answer"><p>far</p></div>
                         </div>
                     </div>
 

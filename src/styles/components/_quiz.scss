@@ -1,0 +1,107 @@
+.quiz-main-content{
+    display: flex;
+    justify-content: start;
+    color: $darkslategray;
+    width: 80%;
+    height: 70vh;
+     
+    .quiz-controls-container{
+        width: 30%;
+        margin-right: 50px;
+        margin-left: 20px;
+        padding-left: 1rem;
+        background-color: white;
+        border-radius: 5px;
+
+        .flashcard-icon {
+            color: $darkcyan;
+            font-size: 2rem;
+            margin-right: .5rem; 
+        }
+        .flashcard-name{
+            position: relative;
+            top: -6px;
+        }
+        .progress-container .progress-bar{
+            height: 1rem;
+            width: 50%;
+            background-color: $lightsteelblue;
+            border-radius: 0.5rem;
+        }
+        .progress-container{
+            margin-top: 50px;
+            .progress-text{
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                text-transform: uppercase;
+                margin-top: 5px;
+            }
+        }
+        .quit{
+                
+        padding: 1rem 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        .quit-button{
+            color: whitesmoke;
+        }
+       
+        }
+        .select-container{
+            width: 90%;
+            margin-top: 2rem;
+            .select-lesson{
+                height: 5px;
+            }
+        }
+    }
+
+    .word-container{
+            width: 60%;
+            background-color: white;
+            box-shadow: 5px 5px  10px #7D7877 ;
+            border-radius: 5px;
+
+            .word {
+                height: 50%;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight:bolder;
+                font-size: xx-large;
+                text-transform: uppercase;
+            }
+
+            .answer-container{
+                
+                margin-top: 5rem;
+                text-align: center;
+                
+                
+
+                .answer{
+                    margin-bottom: 5px;
+                    
+                    
+                    
+                    p{
+                        
+                        border: 1.5px solid  #3ccfcf;
+                        border-radius: 5px;
+                        padding:8px;
+                    }
+                    :hover{
+                        border: 1.5px solid #ffca08;
+                        cursor: pointer;
+
+    
+                    }
+                    
+                }
+                
+            }
+    }
+}
