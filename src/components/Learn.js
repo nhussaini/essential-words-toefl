@@ -171,9 +171,7 @@ class Learn extends Component  {
             <title>Learn Page</title>
         </Helmet>
         <div className="main-page">
-        <div className="input-field col s12">
-
-  </div>
+        
         <h4>Study Mode</h4>
          <main className="main-content">
   
@@ -188,19 +186,14 @@ class Learn extends Component  {
                         <span className="progress-word">progress</span> <span className="progress-number">{this.state.progress}/17</span>
                         </div>
                     </div>
-                    <div className=" input-field col s12 select-container">
 
+                    <div className=" input-field col s12 select-container">
                          <select className="browser-default" onChange={this.handleChange}>
                             <option value="">Choose a Lesson</option>
                             {this.state.whichLesson.map(lesson =>{
                                 return <option value={lesson.lesson} key={Math.random()*10}>{lesson.lesson}</option>
                             })}
                         </select>
-
-      
- 
-
-
                     </div>
                     
                     <div className="quit">
