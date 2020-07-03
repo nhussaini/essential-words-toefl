@@ -40,7 +40,7 @@ class Learn extends Component  {
           this.setState({
               whichLesson: whichLesson,
               disabledButton : true
-          });
+          }, console.log(this.state.whichLesson));
 
       }
 
@@ -191,14 +191,14 @@ class Learn extends Component  {
                          <select className="browser-default" onChange={this.handleChange}>
                             <option value="">Choose a Lesson</option>
                             {this.state.whichLesson.map(lesson =>{
-                                return <option value={lesson.lesson} key={Math.random()*10}>{lesson.lesson}</option>
+                                return <option value={lesson.lesson} key={lesson.lesson}>{lesson.lesson}</option>
                             })}
                         </select>
                     </div>
                     
                     <div className="quit">
                     {/* <button to="/" className="quit-button">quit</button> */}
-                    <a class="waves-effect waves-light btn quit-button" href="/">quit</a>
+                    <a className="waves-effect waves-light btn quit-button" href="/">quit</a>
                     </div>
                     
                 </div>

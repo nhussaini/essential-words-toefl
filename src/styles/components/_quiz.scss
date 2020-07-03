@@ -63,6 +63,14 @@
             background-color: white;
             box-shadow: 5px 5px  10px #7D7877 ;
             border-radius: 5px;
+            
+            .choose-lesson{
+                text-align: center;
+                text-transform: capitalize;
+                font-weight: bolder;
+                font-size: 2rem;
+                margin: 15%;
+            }
 
             .word {
                 height: 50%;
@@ -73,6 +81,7 @@
                 font-weight:bolder;
                 font-size: xx-large;
                 text-transform: uppercase;
+                padding-top: 5rem;
             }
 
             .answer-container{

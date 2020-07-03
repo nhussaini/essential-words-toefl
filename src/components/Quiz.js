@@ -1,9 +1,45 @@
 import React, { Component } from "react";
 import { Helmet } from 'react-helmet';
 import { AiFillEdit } from "react-icons/ai";
+import words from '../../src/words.json';
 
 
 class Quiz extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            whichLesson : [],
+            currentWord : null
+        };
+    }
+    componentDidMount(){
+        const whichLesson=words.map(word=> word);
+        this.setState({
+            whichLesson: whichLesson
+        },
+        console.log("from state:", this.state.whichLesson));
+
+    }
+
+    handleSelect= (e)=>{
+
+        const newWords = words;
+        let selectedLesson = [];
+        console.log("new words are: ", newWords );
+
+        for(let i=0; i<newWords.length; i++){
+            if(newWords[i].lesson === e.target.value){
+                selectedLesson = newWords[i];
+            }
+
+        }
+        console.log("selected lesson is:", selectedLesson);
+        this.setState({
+            currentWord : 'abroad'
+        })
+    }
+
+
 
     render(){
         return(
@@ -27,20 +63,25 @@ class Quiz extends Component{
                         </div>
                       </div>
                       <div className=" input-field col s12 select-container">
-                         <select className="browser-default">
+                         <select className="browser-default" onChange={this.handleSelect}>
                             <option value="">Choose a Lesson</option>
-                            <option value="lesson 1"> Lesson 1</option>
+                            {this.state.whichLesson.map(lesson=>{
+                                return <option value={lesson.lesson} key={lesson.lesson}>{lesson.lesson}</option>
+                            })}
+                            
                          </select>
                       </div>
                       <div className="quit">
-                         <a class="waves-effect waves-light btn quit-button" href="/">quit</a>
+                         <a className="waves-effect waves-light btn quit-button" href="/">quit</a>
                       </div>
                     </div>
 
 
                     <div className="word-container">
+                    {this.state.currentWord ?
+                    <>
                         <div className="word">
-                        <p className="question">abroad</p>
+                        <p className="current-word">{this.state.currentWord}</p>
                         </div>
                         
                         <div className=" row answer-container">
@@ -49,6 +90,8 @@ class Quiz extends Component{
                             <div className="col s12 m6  answer"><p>in the city</p></div>
                             <div className="col s12 m6  answer"><p>far</p></div>
                         </div>
+                        </>
+                        : <p className="choose-lesson"> Choose a lesson to start the Quiz</p>}
                     </div>
 
                     
