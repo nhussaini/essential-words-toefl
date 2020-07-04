@@ -288,10 +288,10 @@
         "vocabulary":[
             {
             "word":"alter",
-            "optionA": "overseas",
-            "optionB": "to come",
-            "optionC": "to go",
-            "optionD":"unfavorable",
+            "optionA": "option A",
+            "optionB": "option B",
+            "optionC": "option c",
+            "optionD":"option D",
             "meaning": "to change or make different"
             },
             {

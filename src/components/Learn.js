@@ -55,7 +55,7 @@ class Learn extends Component  {
                   
               }
           }
-            console.log("selected lesson is:", selectedLesson);
+            //console.log("selected lesson is:", selectedLesson);
           const currentWord= selectedLesson.vocabulary[0].word;
           const currentWordMeaning=selectedLesson.vocabulary[0].meaning;
           

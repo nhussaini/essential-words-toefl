@@ -9,7 +9,11 @@ class Quiz extends Component{
         super(props);
         this.state = {
             whichLesson : [],
-            currentWord : null
+            currentWord : null,
+            optionA : null,
+            optionB : null,
+            optionC : null,
+            optionD : null,
         };
     }
     componentDidMount(){
@@ -31,11 +35,21 @@ class Quiz extends Component{
             if(newWords[i].lesson === e.target.value){
                 selectedLesson = newWords[i];
             }
-
         }
+
+        const currentWord= selectedLesson.vocabulary[0].word;
+        const optionA = selectedLesson.vocabulary[0].optionA;
+        const optionB = selectedLesson.vocabulary[0].optionB;
+        const optionC = selectedLesson.vocabulary[0].optionC;
+        const optionD = selectedLesson.vocabulary[0].optionD;
+
         console.log("selected lesson is:", selectedLesson);
         this.setState({
-            currentWord : 'abroad'
+            currentWord : currentWord,
+            optionA : optionA,
+            optionB : optionB,
+            optionC : optionC,
+            optionD : optionD
         })
     }
 
@@ -85,10 +99,10 @@ class Quiz extends Component{
                         </div>
                         
                         <div className=" row answer-container">
-                            <div className="col s12 m6  answer"><p>overseas</p></div>
-                            <div className="col s12 m6  answer"><p>on the plane</p></div>
-                            <div className="col s12 m6  answer"><p>in the city</p></div>
-                            <div className="col s12 m6  answer"><p>far</p></div>
+                            <div className="col s12 m6  answer"><p>{this.state.optionA}</p></div>
+                            <div className="col s12 m6  answer"><p>{this.state.optionB}</p></div>
+                            <div className="col s12 m6  answer"><p>{this.state.optionC}</p></div>
+                            <div className="col s12 m6  answer"><p>{this.state.optionD}</p></div>
                         </div>
                         </>
                         : <p className="choose-lesson"> Choose a lesson to start the Quiz</p>}
