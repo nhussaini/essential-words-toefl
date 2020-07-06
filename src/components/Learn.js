@@ -87,8 +87,6 @@ class Learn extends Component  {
             console.log('from handleChange ',this.state.currentLesson);
 
             const oldWord=this.state.currentWord;
-            
-            
             let index=this.state.currentLesson.vocabulary.findIndex(obj=>obj.word===oldWord);
             console.log('hopefully index: ',index);
             const currentWord = this.state.currentLesson.vocabulary[index+1];

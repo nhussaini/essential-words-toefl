@@ -7,31 +7,35 @@
             "optionB": "quick",
             "optionC": "praise",
             "optionD":"unfavorable",
-            "meaning": "overseas, to or in another country"
+            "meaning": "overseas, to or in another country",
+            "correctAnswer": "overseas"
             },
             {
             "word":"abrupt",
-            "optionA": "optionA",
-            "optionB": "optionB",
-            "optionC": "optionC",
-            "optionD":"optionD",
-            "meaning": "quick, without warning"
+            "optionA": "overseas",
+            "optionB": "praise",
+            "optionC": "allowable",
+            "optionD":"quick",
+            "meaning": "quick, without warning",
+            "correctAnswer": "quick"
            },
            {
             "word":"acceptable",
-            "optionA": "optionA",
-            "optionB": "optionB",
-            "optionC": "optionC",
-            "optionD":"optionD",
-            "meaning": "allowable, satisfactory"
+            "optionA": "abroad",
+            "optionB": "allowable",
+            "optionC": "deniable",
+            "optionD":"quick",
+            "meaning": "allowable, satisfactory",
+            "correctAnswer": "allowable"
            },
            {
             "word":"acclaim",
-            "optionA": "optionA",
-            "optionB": "optionB",
-            "optionC": "optionC",
-            "optionD":"optionD",
-            "meaning": "enthusiastic approval, allowable"
+            "optionA": "objectionable",
+            "optionB": "facet",
+            "optionC": "praise",
+            "optionD":"ignore",
+            "meaning": "enthusiastic approval, to praise",
+            "correctAnswer": "praise"
            },
            {
             "word":"adverse",

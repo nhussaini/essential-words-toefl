@@ -9,11 +9,13 @@ class Quiz extends Component{
         super(props);
         this.state = {
             whichLesson : [],
+            currentLesson : [],
             currentWord : null,
             optionA : null,
             optionB : null,
             optionC : null,
             optionD : null,
+            progress : 0
         };
     }
     componentDidMount(){
@@ -45,12 +47,39 @@ class Quiz extends Component{
 
         console.log("selected lesson is:", selectedLesson);
         this.setState({
+            currentLesson : selectedLesson,
             currentWord : currentWord,
             optionA : optionA,
             optionB : optionB,
             optionC : optionC,
             optionD : optionD
         })
+    }
+
+    handleNext =(e)=>{
+        console.log("next word");
+        console.log(e.target.value);
+
+        const oldWord=this.state.currentWord;
+        let index=this.state.currentLesson.vocabulary.findIndex(obj=>obj.word===oldWord);
+        const currentWord = this.state.currentLesson.vocabulary[index+1];
+        const nextWord = this.state.currentLesson.vocabulary[index+2];
+        console.log("this is the current word: ", currentWord);
+        console.log("this is the next word", nextWord);
+
+        this.setState({
+            currentWord : currentWord.word,
+            currentWordMeaning : currentWord.meaning,
+            nextWord : nextWord,
+            optionA : currentWord.optionA,
+            optionB : currentWord.optionB,
+            optionC : currentWord.optionC,
+            optionD : currentWord.optionD,
+            progress : this.state.progress + 1,
+
+
+        });
+
     }
 
 
@@ -70,10 +99,10 @@ class Quiz extends Component{
                       <h5><span className="flashcard-icon"><AiFillEdit /></span><span className="flashcard-name">Quiz</span></h5>
                       <div className="progress-container">
                         <div className="">
-                        <progress max="16" value="5" style={{width: "90%", height:"30px"}}></progress>
+                        <progress max="16" value={this.state.progress} style={{width: "90%", height:"30px"}}></progress>
                         </div>
                         <div className="progress-text">
-                        <span className="progress-word">progress</span> <span className="progress-number">0/17</span>
+                        <span className="progress-word">progress</span> <span className="progress-number">{this.state.progress}/17</span>
                         </div>
                       </div>
                       <div className=" input-field col s12 select-container">
@@ -99,10 +128,10 @@ class Quiz extends Component{
                         </div>
                         
                         <div className=" row answer-container">
-                            <div className="col s12 m6  answer"><p>{this.state.optionA}</p></div>
-                            <div className="col s12 m6  answer"><p>{this.state.optionB}</p></div>
-                            <div className="col s12 m6  answer"><p>{this.state.optionC}</p></div>
-                            <div className="col s12 m6  answer"><p>{this.state.optionD}</p></div>
+                            <div className="col s12 m6  answer"><p onClick={this.handleNext}>{this.state.optionA}</p></div>
+                            <div className="col s12 m6  answer"><p onClick={this.handleNext}>{this.state.optionB}</p></div>
+                            <div className="col s12 m6  answer"><p onClick={this.handleNext}>{this.state.optionC}</p></div>
+                            <div className="col s12 m6  answer"><p onClick={this.handleNext}>{this.state.optionD}</p></div>
                         </div>
                         </>
                         : <p className="choose-lesson"> Choose a lesson to start the Quiz</p>}
