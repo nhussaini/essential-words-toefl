@@ -69,7 +69,7 @@ class Quiz extends Component{
 
         this.setState({
             currentWord : currentWord.word,
-            currentWordMeaning : currentWord.meaning,
+            currentWordMeaning : currentWord.correctAnswer,
             nextWord : nextWord,
             optionA : currentWord.optionA,
             optionB : currentWord.optionB,
