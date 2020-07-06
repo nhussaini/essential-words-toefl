@@ -15,6 +15,10 @@ class Quiz extends Component{
             optionB : null,
             optionC : null,
             optionD : null,
+            correctAnswer: null,
+            NumOfCorrectAnswer : 0,
+            NumOfWrongAnswer : 0,
+            
             progress : 0
         };
     }
@@ -44,32 +48,46 @@ class Quiz extends Component{
         const optionB = selectedLesson.vocabulary[0].optionB;
         const optionC = selectedLesson.vocabulary[0].optionC;
         const optionD = selectedLesson.vocabulary[0].optionD;
+        const correctAnswer = selectedLesson.vocabulary[0].correctAnswer;
 
-        console.log("selected lesson is:", selectedLesson);
+        //console.log("selected lesson is:", selectedLesson);
+        
         this.setState({
             currentLesson : selectedLesson,
             currentWord : currentWord,
             optionA : optionA,
             optionB : optionB,
             optionC : optionC,
-            optionD : optionD
+            optionD : optionD,
+            correctAnswer : correctAnswer
         })
     }
 
     handleNext =(e)=>{
-        console.log("next word");
-        console.log(e.target.value);
+        //console.log("next word");
+        //console.log("you selected: ", e.target.innerHTML);
+        //console.log("the correct answer is: ", this.state.currentWord.correctAnswer);
+        if(e.target.innerHTML === this.state.correctAnswer){
+            this.setState(prevState =>({
+                NumOfCorrectAnswer : prevState.NumOfCorrectAnswer + 1
+            }))
+        }else{
+            this.setState(prevState =>({
+                NumOfWrongAnswer : prevState.NumOfWrongAnswer + 1
+            }))
+        }
 
         const oldWord=this.state.currentWord;
         let index=this.state.currentLesson.vocabulary.findIndex(obj=>obj.word===oldWord);
         const currentWord = this.state.currentLesson.vocabulary[index+1];
         const nextWord = this.state.currentLesson.vocabulary[index+2];
-        console.log("this is the current word: ", currentWord);
-        console.log("this is the next word", nextWord);
+       // console.log("this is the current word: ", currentWord);
+        //console.log("this is the next word", nextWord);
 
         this.setState({
             currentWord : currentWord.word,
             currentWordMeaning : currentWord.correctAnswer,
+            correctAnswer : currentWord.correctAnswer,
             nextWord : nextWord,
             optionA : currentWord.optionA,
             optionB : currentWord.optionB,
