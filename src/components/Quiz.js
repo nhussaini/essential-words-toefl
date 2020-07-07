@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Helmet } from 'react-helmet';
 import { AiFillEdit } from "react-icons/ai";
 import words from '../../src/words.json';
+import M from 'materialize-css';
 
 
 class Quiz extends Component{
@@ -67,11 +68,24 @@ class Quiz extends Component{
         //console.log("next word");
         //console.log("you selected: ", e.target.innerHTML);
         //console.log("the correct answer is: ", this.state.currentWord.correctAnswer);
+        // M.toast({
+        //     html: 'option clicked!'
+        // })
         if(e.target.innerHTML === this.state.correctAnswer){
+            M.toast({
+                html: 'Correct Answer',
+                classes: 'toast-valid rounded',
+                displayLength: 1500
+            });
             this.setState(prevState =>({
                 NumOfCorrectAnswer : prevState.NumOfCorrectAnswer + 1
             }))
         }else{
+            M.toast({
+                html: 'Incorrect Answer',
+                classes: 'toast-invalid rounded',
+                displayLength: 1500
+            });
             this.setState(prevState =>({
                 NumOfWrongAnswer : prevState.NumOfWrongAnswer + 1
             }))
