@@ -24,6 +24,9 @@ class Quiz extends Component{
             
             progress : 0
         };
+
+        this.correctSound = React.createRef();
+        this.wrongSound = React.createRef();
     }
     componentDidMount(){
         const whichLesson=words.map(word=> word);
@@ -75,7 +78,8 @@ class Quiz extends Component{
         // })
         if(e.target.innerHTML === this.state.correctAnswer){
             setTimeout(()=>{
-                document.getElementById('correct-answer').play();
+                //document.getElementById('correct-answer').play();
+                this.correctSound.current.play();
             },500)
             
             M.toast({
@@ -88,7 +92,8 @@ class Quiz extends Component{
             }))
         }else{
             setTimeout(()=>{
-                document.getElementById('incorrect-answer').play();
+                //document.getElementById('incorrect-answer').play();
+                this.wrongSound.current.play();
             },500)
             
             M.toast({
@@ -134,8 +139,8 @@ class Quiz extends Component{
                     <title>Quiz Page</title>
                 </Helmet>
                  <div className="quiz-main-page">
-                 <audio id="correct-answer" src={correctAnswerSound}></audio>
-                 <audio id="incorrect-answer" src={incorrectAnswerSound}></audio>
+                 <audio ref={this.correctSound} src={correctAnswerSound}></audio>
+                 <audio ref={this.wrongSound} src={incorrectAnswerSound}></audio>
                   <h4>Quiz Mode</h4>
 
                   <main className="quiz-main-content">
