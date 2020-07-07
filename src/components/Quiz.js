@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet';
 import { AiFillEdit } from "react-icons/ai";
 import words from '../../src/words.json';
 import M from 'materialize-css';
+import correctAnswerSound from '../assets/audio/Correct-answer.mp3';
+import incorrectAnswerSound from '../assets/audio/Fail-trombone.mp3';
 
 
 class Quiz extends Component{
@@ -72,8 +74,12 @@ class Quiz extends Component{
         //     html: 'option clicked!'
         // })
         if(e.target.innerHTML === this.state.correctAnswer){
+            setTimeout(()=>{
+                document.getElementById('correct-answer').play();
+            },500)
+            
             M.toast({
-                html: 'Correct Answer',
+                html: 'Correct!',
                 classes: 'toast-valid rounded',
                 displayLength: 1500
             });
@@ -81,8 +87,13 @@ class Quiz extends Component{
                 NumOfCorrectAnswer : prevState.NumOfCorrectAnswer + 1
             }))
         }else{
+            setTimeout(()=>{
+                document.getElementById('incorrect-answer').play();
+            },500)
+            
             M.toast({
-                html: 'Incorrect Answer',
+                
+                html: 'Incorrect!',
                 classes: 'toast-invalid rounded',
                 displayLength: 1500
             });
@@ -123,6 +134,8 @@ class Quiz extends Component{
                     <title>Quiz Page</title>
                 </Helmet>
                  <div className="quiz-main-page">
+                 <audio id="correct-answer" src={correctAnswerSound}></audio>
+                 <audio id="incorrect-answer" src={incorrectAnswerSound}></audio>
                   <h4>Quiz Mode</h4>
 
                   <main className="quiz-main-content">
