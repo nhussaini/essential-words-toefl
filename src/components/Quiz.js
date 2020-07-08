@@ -178,12 +178,13 @@ class Quiz extends Component{
 
         const quizStats ={
             NumOfCorrectAnswer : this.state.NumOfCorrectAnswer,
-            NumOfWrongAnswer : this.state.NumOfWrongAnswer
+            NumOfWrongAnswer : this.state.NumOfWrongAnswer,
+            Lesson : this.state.currentLesson.lesson
         };
         console.log(quizStats);
 
         setTimeout(()=>{
-            this.props.history.push('/');
+            this.props.history.push('/quiz/quizsummary', quizStats);
         },1500)
         // this.props.history.push('/');
     }
