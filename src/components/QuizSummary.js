@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import { AiOutlineCheck } from "react-icons/ai";
+import { BsAwardFill } from "react-icons/bs";
+
 
 
 class QuizSummary extends Component{
@@ -47,30 +48,43 @@ class QuizSummary extends Component{
 
         if(state !== undefined){
             stats = (
-                <div>
-                    <div><AiOutlineCheck /></div>
-                    <h4>Quiz Result</h4>
-                    <div className="container">
-                        <h4>{remark}</h4>
-                        <h2>Your score: {this.state.score.toFixed(0)}&#37;</h2>
+                <div className="summary-main">
+                    <div className="tick-mark"><BsAwardFill /></div>
+                    <h4 style={{textAlign:"center"}}>Quiz Result</h4>
+                    <div className="container summary-container">
+                        <h4 className="remark">{remark}</h4>
+                        <h2 style={{textAlign:"center", color:"#84c547"}}>Your Score : {this.state.score.toFixed(0)}&#37;</h2>
                         <span className="left stats">Lesson: </span>
-                        <span className="right">{this.state.lesson}</span><br />
+                        <span className="right stats">{this.state.lesson}</span><br />
 
                         <span className="left stats">Number of words: </span>
-                        <span className="right">17</span><br />
+                        <span className="right stats">17</span><br />
 
                         <span className="left stats">Number of correct answers: </span>
-                        <span className="right">{this.state.numOfCorrectAnswer}</span><br />
+                        <span className="right stats">{this.state.numOfCorrectAnswer}</span><br />
 
                         <span className="left stats">Number of wrong answers: </span>
-                        <span className="right">{this.state.numOfWrongAnswer}</span>
+                        <span className="right stats">{this.state.numOfWrongAnswer}</span><br />
+
+                        
+                    </div>
+                    <div className="summary-button">
+                            <button className="waves-effect waves-light btn back-home-button">Back to Home</button>
+                            <button className="waves-effect waves-light btn another-quiz-button">Another Quiz</button>
+
                     </div>
                 </div>
             );
         }
         else{
             stats = (
-                <p>Stats is not available</p>
+                <div className="container">
+                    <h1>No Quiz Result Available!</h1>
+                    <div className="no-result-button">
+                        <button className="waves-effect waves-light btn">Back to Home</button>
+                        <button className="waves-effect waves-light btn">Take a Quiz</button>
+                    </div>
+                </div>
             );
         }
 
