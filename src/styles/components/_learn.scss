@@ -11,7 +11,7 @@ body{
     }
     .main-content{
         display: flex;
-        justify-content:start;
+        justify-content:flex-start;
         color: $darkslategray;
         width: 80%;
         height: 70vh;
@@ -155,7 +155,7 @@ body{
 
         .main-content{
             display: flex;
-            justify-content:start;
+            justify-content:flex-start;
             color: $darkslategray;
             
             

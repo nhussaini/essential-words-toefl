@@ -14,6 +14,7 @@ class Quiz extends Component{
             whichLesson : [],
             currentLesson : [],
             currentWord : null,
+            nextWord : null,
             optionA : null,
             optionB : null,
             optionC : null,
@@ -21,7 +22,6 @@ class Quiz extends Component{
             correctAnswer: null,
             NumOfCorrectAnswer : 0,
             NumOfWrongAnswer : 0,
-            
             progress : 0
         };
 
@@ -61,6 +61,9 @@ class Quiz extends Component{
         this.setState({
             currentLesson : selectedLesson,
             currentWord : currentWord,
+            progress : 0,
+            NumOfCorrectAnswer: 0,
+            NumOfWrongAnswer : 0,
             optionA : optionA,
             optionB : optionB,
             optionC : optionC,
@@ -76,6 +79,44 @@ class Quiz extends Component{
         // M.toast({
         //     html: 'option clicked!'
         // })
+        if(this.state.nextWord === undefined){
+            if(e.target.innerHTML === this.state.correctAnswer){
+                setTimeout(()=>{
+                    //document.getElementById('correct-answer').play();
+                    this.correctSound.current.play();
+                },500)
+                
+                M.toast({
+                    html: 'Correct!',
+                    classes: 'toast-valid rounded',
+                    displayLength: 1500
+                });
+                this.setState(prevState =>({
+                    NumOfCorrectAnswer : prevState.NumOfCorrectAnswer + 1
+                }), ()=>{
+                    this.endQuiz();
+                })
+            }else{
+                setTimeout(()=>{
+                    //document.getElementById('incorrect-answer').play();
+                    this.wrongSound.current.play();
+                },500)
+                
+                M.toast({
+                    
+                    html: 'Incorrect!',
+                    classes: 'toast-invalid rounded',
+                    displayLength: 1500
+                });
+                this.setState(prevState =>({
+                    NumOfWrongAnswer : prevState.NumOfWrongAnswer + 1
+                }),()=>{
+                    this.endQuiz();
+                })
+            }
+            
+        }
+        else{
         if(e.target.innerHTML === this.state.correctAnswer){
             setTimeout(()=>{
                 //document.getElementById('correct-answer').play();
@@ -127,7 +168,24 @@ class Quiz extends Component{
 
 
         });
+        
+    }     
 
+    }
+
+    endQuiz =()=>{
+        alert('Quiz has ended!');
+
+        const quizStats ={
+            NumOfCorrectAnswer : this.state.NumOfCorrectAnswer,
+            NumOfWrongAnswer : this.state.NumOfWrongAnswer
+        };
+        console.log(quizStats);
+
+        setTimeout(()=>{
+            this.props.history.push('/');
+        },1500)
+        // this.props.history.push('/');
     }
 
 
