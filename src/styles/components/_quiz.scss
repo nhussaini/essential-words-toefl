@@ -1,9 +1,17 @@
+.quiz-main-page{
+    color: $darkslategray;
+    h4{
+        padding-left: 20px;
+        font-weight: bolder;
+    }
+
 .quiz-main-content{
     display: flex;
     justify-content: flex-start;
     color: $darkslategray;
     width: 80%;
     height: 70vh;
+    
      
     .quiz-controls-container{
         width: 30%;
@@ -113,4 +121,75 @@
                 
             }
     }
+}
+}
+
+
+
+
+//Media Query:
+@media(max-width: 414px){
+    .quiz-main-page{
+        h4{
+            font-weight: bold;
+            font-size: x-large;
+        }
+    
+    .quiz-main-content{
+        width: 95%;
+        height: 60vh;
+        
+         
+        .quiz-controls-container{
+            width: 35%;
+            // margin-left: 15px;
+            margin-right: 10px;
+            .progress-container{
+                margin-top: 30px;
+                .progress-text{
+                   .progress-word{
+                    font-weight: bold;
+                    font-size: x-small;
+                   }
+                   .progress-number{
+                       font-size: x-small;
+                   }
+                }
+            }
+           
+           
+            .select-container{
+                width: 90%;
+                margin-top: 2rem;
+                .select-lesson{
+                    height: 5px;
+                }
+            }
+        }
+    
+        .word-container{
+             
+                .choose-lesson{
+                    padding-top: 25px;
+                    font-size: 1.5rem;
+                
+                }
+    
+                .word {
+                    height: 25%;
+                    font-size:large;
+                
+                }
+    
+                .answer-container{
+                    
+                    margin-top: 4rem;
+                    
+                }
+        }
+    }
+    }
+    
+    
+
 }
