@@ -55,7 +55,7 @@ class QuizSummary extends Component{
                         <h4 className="remark">{remark}</h4>
                         <h2 style={{textAlign:"center", color:"#84c547"}}>Your Score : {this.state.score.toFixed(0)}&#37;</h2>
                         <span className="left stats">Lesson: </span>
-                        <span className="right stats">{this.state.lesson}</span><br />
+                        <span className="right stats">{this.state.lesson}</span><br /> 
 
                         <span className="left stats">Number of words: </span>
                         <span className="right stats">17</span><br />
@@ -69,8 +69,8 @@ class QuizSummary extends Component{
                         
                     </div>
                     <div className="summary-button">
-                            <button className="waves-effect waves-light btn back-home-button">Back to Home</button>
-                            <button className="waves-effect waves-light btn another-quiz-button">Another Quiz</button>
+                            <a className="waves-effect waves-light btn back-home-button" href="/">Back to Home</a>
+                            <a className="waves-effect waves-light btn another-quiz-button" href="/quiz">Another Quiz</a>
 
                     </div>
                 </div>
@@ -81,8 +81,8 @@ class QuizSummary extends Component{
                 <div className="container">
                     <h1>No Quiz Result Available!</h1>
                     <div className="no-result-button">
-                        <button className="waves-effect waves-light btn">Back to Home</button>
-                        <button className="waves-effect waves-light btn">Take a Quiz</button>
+                        <a className="waves-effect waves-light btn" href="/">Back to Home</a>
+                        <a className="waves-effect waves-light btn" href="/quiz">Take a Quiz</a>
                     </div>
                 </div>
             );
