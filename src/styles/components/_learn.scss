@@ -100,26 +100,26 @@ body{
                 text-transform: uppercase;
 
                 /*fade enter*/
-                .fade-enter{
-                    opacity: 0;
-                    z-index: 1;
-                }
-                .fade-enter.fade-enter-active {
-                    opacity: 1;
-                    transition: opacity 100ms ease-out;
-                }
+                // .fade-enter{
+                //     opacity: 0;
+                //     z-index: 1;
+                // }
+                // .fade-enter.fade-enter-active {
+                //     opacity: 1;
+                //     transition: opacity 100ms ease-out;
+                // }
 
-                /* exit */
-                .fade-exit{
-                    opacity: 1;
-                }
-                .fade-exit.fade-exit-active{
-                    opacity: 0;
-                    transition: opacity 100ms ease-out;
-                }
-                .fade-exit-done{
-                    opacity: 0;
-                }
+                // /* exit */
+                // .fade-exit{
+                //     opacity: 1;
+                // }
+                // .fade-exit.fade-exit-active{
+                //     opacity: 0;
+                //     transition: opacity 100ms ease-out;
+                // }
+                // .fade-exit-done{
+                //     opacity: 0;
+                // }
 
                 
             }
@@ -200,26 +200,26 @@ body{
               
     
                     /*fade enter*/
-                    .fade-enter{
-                        opacity: 0;
-                        z-index: 1;
-                    }
-                    .fade-enter.fade-enter-active {
-                        opacity: 1;
-                        transition: opacity 100ms ease-out;
-                    }
+                    // .fade-enter{
+                    //     opacity: 0;
+                    //     z-index: 1;
+                    // }
+                    // .fade-enter.fade-enter-active {
+                    //     opacity: 1;
+                    //     transition: opacity 100ms ease-out;
+                    // }
     
-                    /* exit */
-                    .fade-exit{
-                        opacity: 1;
-                    }
-                    .fade-exit.fade-exit-active{
-                        opacity: 0;
-                        transition: opacity 100ms ease-out;
-                    }
-                    .fade-exit-done{
-                        opacity: 0;
-                    }
+                    // /* exit */
+                    // .fade-exit{
+                    //     opacity: 1;
+                    // }
+                    // .fade-exit.fade-exit-active{
+                    //     opacity: 0;
+                    //     transition: opacity 100ms ease-out;
+                    // }
+                    // .fade-exit-done{
+                    //     opacity: 0;
+                    // }
     
                     
                 }
