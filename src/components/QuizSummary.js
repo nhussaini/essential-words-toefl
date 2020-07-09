@@ -17,16 +17,18 @@ class QuizSummary extends Component{
 
     componentDidMount(){
         console.log("quiz satats: ",this.props.location.state);
-        const { state } = this.props.location;
-        this.setState({
-            numOfCorrectAnswer : state.NumOfCorrectAnswer,
-            numOfWrongAnswer : state.NumOfWrongAnswer,
-            lesson : state.Lesson,
-            score : (state.NumOfCorrectAnswer/17) *100
-        },()=>{
-        console.log("state of quiz summary: ", this.state)
-             }
-        );
+        if(this.props.location.state){
+          const { state } = this.props.location;
+          this.setState({
+              numOfCorrectAnswer : state.NumOfCorrectAnswer,
+              numOfWrongAnswer : state.NumOfWrongAnswer,
+              lesson : state.Lesson,
+               score : (state.NumOfCorrectAnswer/17) *100
+          },()=>{
+          console.log("state of quiz summary: ", this.state)
+               }
+          );
+        }
         
     }
     render (){
@@ -78,11 +80,11 @@ class QuizSummary extends Component{
         }
         else{
             stats = (
-                <div className="container">
+                <div className="container no-summary">
                     <h1>No Quiz Result Available!</h1>
-                    <div className="no-result-button">
-                        <a className="waves-effect waves-light btn" href="/">Back to Home</a>
-                        <a className="waves-effect waves-light btn" href="/quiz">Take a Quiz</a>
+                    <div className="no-result-button summary-button">
+                        <a className="waves-effect waves-light btn back-home-button" href="/">Back to Home</a>
+                        <a className="waves-effect waves-light btn another-quiz-button" href="/quiz">Take a Quiz</a>
                     </div>
                 </div>
             );

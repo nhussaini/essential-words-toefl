@@ -22,8 +22,8 @@
             padding-top: 2px;
         }
         .stats{
-            padding-left: 5px;
-            padding-right: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
             text-transform: capitalize;
             font-weight: bold;
         }
@@ -44,4 +44,17 @@
     }
 
     
+}
+
+.no-summary{
+    h1{
+        text-align: center;
+    }
+    .no-result-button{
+        display: flex;
+        justify-content: center;
+        .another-quiz-button{
+            background-color: #84c547;
+        }
+    }
 }
