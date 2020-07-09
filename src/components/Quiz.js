@@ -174,7 +174,7 @@ class Quiz extends Component{
     }
 
     endQuiz =()=>{
-        alert('Quiz has ended!');
+        //alert('Quiz has ended!');
 
         const quizStats ={
             NumOfCorrectAnswer : this.state.NumOfCorrectAnswer,
@@ -185,7 +185,7 @@ class Quiz extends Component{
 
         setTimeout(()=>{
             this.props.history.push('/quiz/quizsummary', quizStats);
-        },1500)
+        },2000)
         // this.props.history.push('/');
     }
 
@@ -230,7 +230,9 @@ class Quiz extends Component{
 
 
                     <div className="word-container">
-                    {this.state.currentWord ?
+                         
+                       
+                         {this.state.currentWord ?
                     <>
                         <div className="word">
                         <p className="current-word">{this.state.currentWord}</p>
@@ -242,8 +244,10 @@ class Quiz extends Component{
                             <div className="col s12 m6  answer"><p onClick={this.handleNext}>{this.state.optionC}</p></div>
                             <div className="col s12 m6  answer"><p onClick={this.handleNext}>{this.state.optionD}</p></div>
                         </div>
-                        </>
+                    </>
+                    
                         : <p className="choose-lesson"> Choose a lesson to start the Quiz</p>}
+                        
                     </div>
 
                     

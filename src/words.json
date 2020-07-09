@@ -477,9 +477,163 @@
             "meaning": "of great importance, indispensable",
             "correctAnswer" : "indispensable"
            }
-           
-
         ]
-
+    },
+    {"lesson": "lesson 4",
+        "vocabulary":[
+            {
+            "word":"ambiguous",
+            "optionA": "miraculous",
+            "optionB": "vague",
+            "optionC": "fragile",
+            "optionD": "obvious",
+            "meaning": "adj. of unclear meaning; something that can be understood in more than one way",
+            "correctAnswer" : "vague"
+            },
+            {
+            "word":"arbitrary",
+            "optionA": "vague",
+            "optionB": "reckless",
+            "optionC": "haphazard",
+            "optionD": "enormous",
+            "meaning": "adj. an action or decision made with little thought, order, or reason",
+            "correctAnswer" : "haphazard"
+           },
+           {
+            "word":"assert",
+            "optionA": "inspect",
+            "optionB": "revitalize",
+            "optionC": "reform",
+            "optionD": "declare",
+            "meaning": "v. to express or defend oneself strongly; to state positively",
+            "correctAnswer" : "declare"
+           },
+           {
+            "word":"astounding",
+            "optionA": "alluring",
+            "optionB": "bothersome",
+            "optionC": "astonishing",
+            "optionD":"fascinating",
+            "meaning": "adj. very surprising",
+            "correctAnswer" : "astonishing"
+           },
+           {
+            "word":"astute",
+            "optionA": "assertive",
+            "optionB": "perceptive",
+            "optionC": "predictive",
+            "optionD": "bothersome",
+            "meaning": "adj. very intelligent, smart, clever",
+            "correctAnswer" : "perceptive"
+           },
+           {
+            "word":"concur",
+            "optionA": "anticipate",
+            "optionB": "determine",
+            "optionC": "agree",
+            "optionD": "assure",
+            "meaning": "v. to have the same opinion or draw the same conclusion",
+            "correctAnswer" : "agree"
+           },
+           {
+            "word":"deceptively",
+            "optionA": "abruptly",
+            "optionB": "misleadingly",
+            "optionC": "prgoressively",
+            "optionD":"truly",
+            "meaning": "adv. making something appear true or good when it is false or bad",
+            "correctAnswer" : "misleadingly"
+           },
+           {
+            "word":"designate",
+            "optionA": "assign",
+            "optionB": "design",
+            "optionC": "resign",
+            "optionD":"determine",
+            "meaning": "v. to specify, name, or select to do a task; to indicate",
+            "correctAnswer" : "assign"
+           },
+           {
+            "word":"determined",
+            "optionA": "adept",
+            "optionB": "bothersome",
+            "optionC": "resolute",
+            "optionD":"enhanced",
+            "meaning": "adj. strong in one’s opinion, firm in conviction, to find out",
+            "correctAnswer" : "resolute"
+           },
+           {
+            "word":"elicit",
+            "optionA": "declare",
+            "optionB": "withdraw",
+            "optionC": "conform",
+            "optionD":"extract",
+            "meaning": "v. to get the facts or draw out the truth",
+            "correctAnswer" : "extract"
+           },
+           {
+            "word":"embody",
+            "optionA": "exemplify",
+            "optionB": "entice",
+            "optionC": "notice",
+            "optionD":"enrich",
+            "meaning": "v. to be a good example of a concept or idea",
+            "correctAnswer" : "exemplify"
+           },
+           {
+            "word":"instigate",
+            "optionA": "initiate",
+            "optionB": "empower",
+            "optionC": "intensify",
+            "optionD": "restore",
+            "meaning": "v. to cause a conflict or argument",
+            "correctAnswer" : "initiate"
+           },
+           {
+            "word":"mundane",
+            "optionA": "celebrated",
+            "optionB": "ordinary",
+            "optionC": "astounding",
+            "optionD": "alterable",
+            "meaning": "adj. common or routine",
+            "correctAnswer" : "ordinary"
+           },
+           {
+            "word":"petition",
+            "optionA": "enrich",
+            "optionB": "appeal",
+            "optionC": "assert",
+            "optionD": "restore",
+            "meaning": "v. to make a request",
+            "correctAnswer" : "appeal"
+           },
+           {
+            "word":"relinquish",
+            "optionA": "heighten",
+            "optionB": "encourage",
+            "optionC": "alter",
+            "optionD": "abdicate",
+            "meaning": "v. to give up control",
+            "correctAnswer" : "abdicate"
+           },
+           {
+            "word":"resilient",
+            "optionA": "bothersome",
+            "optionB": "vital",
+            "optionC": "unbearable",
+            "optionD": "tenacious",
+            "meaning": "adj. strong enough to recover from difficulty or disease",
+            "correctAnswer" : "tenacious"
+           },
+           {
+            "word":"stagnant",
+            "optionA": "still",
+            "optionB": "flowing",
+            "optionC": "angry",
+            "optionD": "enormous",
+            "meaning": "adj. not moving or developing",
+            "correctAnswer" : "still"
+           }
+        ]
     }
 ]

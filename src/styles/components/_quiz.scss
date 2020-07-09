@@ -71,6 +71,32 @@
             background-color: white;
             box-shadow: 5px 5px  10px #7D7877 ;
             border-radius: 5px;
+
+            // slide enter
+            .slie-enter{
+                opacity: 0;
+                transform: scale(0.97);
+                z-index: 1;
+            }
+            .slie-enter.slie-enter-active{
+                opacity: 1;
+                transform: scale(1);
+                transition: opacity 300ms linear 100ms, transform 300ms ease-in-out 100ms;
+            }
+
+            // slide-exit
+            .slide-exit{
+                opacity: 1;
+                transform: scale(1);
+            }
+            .slide-exit.slide-exit-active{
+                opacity: 0;
+                transform: scale(0.97);
+                transition: opacity 150ms linear, transform 150ms ease-out;
+            }
+            .slide-exit-done{
+                opacity: 0;
+            }
             
             .choose-lesson{
                 text-align: center;
