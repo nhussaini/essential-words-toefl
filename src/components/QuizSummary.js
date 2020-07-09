@@ -82,7 +82,7 @@ class QuizSummary extends Component{
             stats = (
                 <div className="container no-summary">
                     <h1>No Quiz Result Available!</h1>
-                    <div className="no-result-button summary-button">
+                    <div className="no-result-button">
                         <a className="waves-effect waves-light btn back-home-button" href="/">Back to Home</a>
                         <a className="waves-effect waves-light btn another-quiz-button" href="/quiz">Take a Quiz</a>
                     </div>

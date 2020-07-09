@@ -164,139 +164,158 @@
         "vocabulary":[
             {
             "word":"advantage",
-            "optionA": "overseas",
-            "optionB": "to come",
-            "optionC": "to go",
-            "optionD":"unfavorable",
-            "meaning": "benefit, something that may help one to be successful"
+            "optionA": "loss",
+            "optionB": "overseas",
+            "optionC": "evasion",
+            "optionD":"benefit",
+            "meaning": "benefit, something that may help one to be successful",
+            "correctAnswer" : "benefit"
             },
             {
             "word":"advent",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "the coming or appearance of something"
+            "optionA": "arrival",
+            "optionB": "advantage",
+            "optionC": "removal",
+            "optionD":"approval",
+            "meaning": "the coming or appearance of something",
+            "correctAnswer" : "arrival"
            },
            {
             "word":"agile",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "able to move in a quick and easy way"
+            "optionA": "nimble",
+            "optionB": "slow",
+            "optionC": "late",
+            "optionD":"early",
+            "meaning": "able to move in a quick and easy way, nimble",
+            "correctAnswer" : "nimble"
            },
            {
             "word":"albeit",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "in spite of the facts, although"
+            "optionA": "because",
+            "optionB": "therefore",
+            "optionC": "as a result of",
+            "optionD":"although",
+            "meaning": "in spite of the facts, although",
+            "correctAnswer" : "although"
            },
            {
             "word":"appealing",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "attractive, or interesting"
+            "optionA": "disgusting",
+            "optionB": "alluring",
+            "optionC": "shining",
+            "optionD": "boring",
+            "meaning": "attractive, or interesting, alluring",
+            "correctAnswer" : "alluring"
            },
            {
             "word":"celebrated",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "acclaimed, well-known and popular"
+            "optionA": "praised",
+            "optionB": "renowned",
+            "optionC": "prevented",
+            "optionD":"exhausted",
+            "meaning": "acclaimed, well-known and popular, renowned",
+            "correctAnswer" : "renowned"
            },
            {
             "word":"circumvent",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "to avoid, to evade"
+            "optionA": "to evade",
+            "optionB": "to execute",
+            "optionC": "to delay",
+            "optionD":"to stop",
+            "meaning": "to avoid, to evade",
+            "correctAnswer" : "to evade"
            },
            {
             "word":"collide",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "to hit one object against another with violent force, to crash"
+            "optionA": "to evade",
+            "optionB": "to enter",
+            "optionC": "to interfere",
+            "optionD":"to crash",
+            "meaning": "to hit one object against another with violent force, to crash",
+            "correctAnswer" : "to crash"
            },
            {
             "word":"contemporary",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "modern, current"
+            "optionA": "free",
+            "optionB": "nimble",
+            "optionC": "archaic",
+            "optionD":"current",
+            "meaning": "modern, current",
+            "correctAnswer" : "current"
            },
            {
             "word":"distribute",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "to divide among people, to give out"
+            "optionA": "evaluate",
+            "optionB": "dispense",
+            "optionC": "collide",
+            "optionD": "circumvent",
+            "meaning": "to divide among people, to give out, to dispense",
+            "correctAnswer" : "dispense"
            },
            {
             "word":"encourage",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "to promote, to stimulate"
+            "optionA": "stimulate",
+            "optionB": "slow down",
+            "optionC": "dispense",
+            "optionD": "threaten",
+            "meaning": "to promote, to stimulate",
+            "correctAnswer" : "stimulate"
            },
            {
             "word":"energetic",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "full of life, action or power, vigorous"
+            "optionA": "dull",
+            "optionB": "dark",
+            "optionC": "vigorous",
+            "optionD": "fragile",
+            "meaning": "full of life, action or power, vigorous",
+            "correctAnswer" : "vigorous"
+            
+
            },
            {
             "word":"frail",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "weak in health, or in body"
+            "optionA": "fragile",
+            "optionB": "lively",
+            "optionC": "slow",
+            "optionD":"vigorous",
+            "meaning": "weak in health, or in body, fragile",
+            "correctAnswer" : "fragile"
            },
            {
             "word":"heyday",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "a high point of success,or abundance"
+            "optionA": "pinnacle",
+            "optionB": "misery",
+            "optionC": "fragility",
+            "optionD":"failure",
+            "meaning": "a high point of success,or abundance, pinnacle",
+            "correctAnswer" : "pinnacle"
            },
            {
             "word":"myth",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "an invented story or idea"
+            "optionA": "mystery",
+            "optionB": "truth",
+            "optionC": "failure",
+            "optionD":"legend",
+            "meaning": "an invented story or idea, legend",
+            "correctAnswer" : "legend"
            },
            {
             "word":"refine",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "to make pure, to improve"
+            "optionA": "dispense",
+            "optionB": "improve",
+            "optionC": "postpone",
+            "optionD": "blend",
+            "meaning": "to make pure, to improve",
+            "correctAnswer" : "improve"
            },
            {
             "word":"worthwile",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "value in doing something, rewarding"
+            "optionA": "extensive",
+            "optionB": "praising",
+            "optionC": "stimulating",
+            "optionD":"rewarding",
+            "meaning": "value in doing something, rewarding",
+            "correctAnswer" : "rewarding"
            }
            
 
@@ -307,139 +326,156 @@
         "vocabulary":[
             {
             "word":"alter",
-            "optionA": "option A",
-            "optionB": "option B",
-            "optionC": "option c",
-            "optionD":"option D",
-            "meaning": "to change or make different"
+            "optionA": "modify",
+            "optionB": "postpone",
+            "optionC": "destroy",
+            "optionD": "improve",
+            "meaning": "to change or make different",
+            "correctAnswer" : "modify"
             },
             {
             "word":"analyze",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "to study someting carefully, to examine"
+            "optionA": "modify",
+            "optionB": "circumvent",
+            "optionC": "alter",
+            "optionD": "examine",
+            "meaning": "to study someting carefully, to examine",
+            "correctAnswer" : "examine"
            },
            {
             "word":"ancient",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "very old"
+            "optionA": "current",
+            "optionB": "very old",
+            "optionC": "fragile",
+            "optionD": "nimble",
+            "meaning": "very old",
+            "correctAnswer" : "very old"
            },
            {
             "word":"annoying",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "disturbing to a person, a slight bother"
+            "optionA": "alluring",
+            "optionB": "bothersome",
+            "optionC": "nimble",
+            "optionD":"fascinating",
+            "meaning": "disturbing to a person, a slight bother",
+            "correctAnswer" : "bothersome"
            },
            {
             "word":"anticipate",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "predict, to think about or prepare for someting ahead of time"
+            "optionA": "participate",
+            "optionB": "alter",
+            "optionC": "assure",
+            "optionD":"predict",
+            "meaning": "predict, to think about or prepare for someting ahead of time",
+            "correctAnswer" : "predict"
            },
            {
             "word":"ascertain",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "to discover, to find out"
+            "optionA": "anticipate",
+            "optionB": "determine",
+            "optionC": "predict",
+            "optionD": "assure",
+            "meaning": "to discover, to find out, to determine",
+            "correctAnswer" : "determine"
            },
            {
             "word":"benign",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "doing no harm or damage, gentle"
+            "optionA": "harmless",
+            "optionB": "harmful",
+            "optionC": "fragile",
+            "optionD":"nimble",
+            "meaning": "doing no harm or damage, gentle, harmless",
+            "correctAnswer" : "harmless"
            },
            {
             "word":"confrom",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "to follow established rules or patterns of behaviour"
+            "optionA": "adapt",
+            "optionB": "adopt",
+            "optionC": "adept",
+            "optionD":"abrupt",
+            "meaning": "to follow established rules or patterns of behaviour",
+            "correctAnswer" : "adapt"
            },
            {
             "word":"enrich",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "to make rich, to make something of greater value"
+            "optionA": "adapt",
+            "optionB": "circumvent",
+            "optionC": "modify",
+            "optionD":"enhance",
+            "meaning": "to make rich, to make something of greater value",
+            "correctAnswer" : "enhance"
            },
            {
             "word":"intensify",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "to make stronger in feeling or quality, to heighten"
+            "optionA": "heighten",
+            "optionB": "alter",
+            "optionC": "dispense",
+            "optionD":"shrink",
+            "meaning": "to make stronger in feeling or quality, to heighten",
+            "correctAnswer" : "heighten"
            },
            {
             "word":"intolerable",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "unbearable, difficult or painful to experience"
+            "optionA": "unnecessary",
+            "optionB": "unnoticeable",
+            "optionC": "unbearable",
+            "optionD":"unforgettable",
+            "meaning": "unbearable, difficult or painful to experience",
+            "correctAnswer" : "unbearable"
            },
            {
             "word":"ongoing",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "current, continuing"
+            "optionA": "late",
+            "optionB": "current",
+            "optionC": "done",
+            "optionD": "early",
+            "meaning": "current, continuing",
+            "correctAnswer" : "current"
            },
            {
             "word":"potential",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": " an ability, happening, or opportunity that has not occurred or been developed"
+            "optionA": "possibility",
+            "optionB": "tolerance",
+            "optionC": "fragility",
+            "optionD": "suitability",
+            "meaning": " an ability, happening, or opportunity that has not occurred or been developed",
+            "correctAnswer" : "possibility"
            },
            {
             "word":"propose",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "to suggest or plan to do something"
+            "optionA": "demand",
+            "optionB": "suggest",
+            "optionC": "ask",
+            "optionD": "allure",
+            "meaning": "to suggest or plan to do something",
+            "correctAnswer" : "suggest"
            },
            {
             "word":"restore",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "to give back or bring back something; to return to the original condition revitalize"
+            "optionA": "revitalize",
+            "optionB": "reform",
+            "optionC": "alter",
+            "optionD": "enrich",
+            "meaning": "to give back or bring back something; to return to the original condition, revitalize",
+            "correctAnswer" : "revitalize"
            },
            {
             "word":"turbulent",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "disturbed, chaotic"
+            "optionA": "worried",
+            "optionB": "tidy",
+            "optionC": "chaotic",
+            "optionD":"fragile",
+            "meaning": "disturbed, chaotic",
+            "correctAnswer" : "chaotic"
            },
            {
             "word":"vital",
-            "optionA": "to go",
-            "optionB": "to eat",
-            "optionC": "to run",
-            "optionD":"to sit",
-            "meaning": "of great importance, indispensable"
+            "optionA": "indispensable",
+            "optionB": "turbulent",
+            "optionC": "urgent",
+            "optionD": "tidy",
+            "meaning": "of great importance, indispensable",
+            "correctAnswer" : "indispensable"
            }
            
 
