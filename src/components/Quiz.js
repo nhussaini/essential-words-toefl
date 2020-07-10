@@ -7,6 +7,7 @@ import correctAnswerSound from '../assets/audio/Correct-answer.mp3';
 import incorrectAnswerSound from '../assets/audio/Fail-trombone.mp3';
 
 
+
 class Quiz extends Component{
     constructor(props){
         super(props);
@@ -193,6 +194,7 @@ class Quiz extends Component{
 
     render(){
         return(
+            
             <>
                 <Helmet>
                     <title>Quiz Page</title>
@@ -254,7 +256,10 @@ class Quiz extends Component{
 
                   </main>
                 </div>
+                
             </>
+        
+            
            
         );
     }

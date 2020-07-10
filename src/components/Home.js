@@ -1,6 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
+
 
 const Home=()=> (
     <>
@@ -18,7 +20,9 @@ const Home=()=> (
                     <Link to="/quiz" className="play-button quiz">quiz</Link>
                 </div>
             </section>
+            
         </div>
+        <Footer />
     </>
     );
 

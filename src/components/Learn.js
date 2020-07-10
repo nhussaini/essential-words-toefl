@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet';
-
 import { BsCardText } from "react-icons/bs";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 //import Select from 'react-select'
-
 import words from '../../src/words.json';
+
 
 
 
@@ -243,6 +242,7 @@ class Learn extends Component  {
                  </div>
          </main>
          </div>
+         
         </>
         
     )
