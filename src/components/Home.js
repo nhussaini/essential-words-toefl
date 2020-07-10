@@ -8,6 +8,8 @@ const Home=()=> (
     <>
         <Helmet>
             <title>Home</title>
+    
+            
         </Helmet>
         <div id="home">
             <section>

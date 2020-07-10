@@ -635,5 +635,162 @@
             "correctAnswer" : "still"
            }
         ]
+    },
+    {"lesson": "lesson 5",
+        "vocabulary":[
+            {
+            "word":"baffle",
+            "optionA": "assert",
+            "optionB": "astute",
+            "optionC": "puzzle",
+            "optionD": "flow",
+            "meaning": "v. to confuse to a point at which no progress can be made, to puzzle",
+            "correctAnswer" : "puzzle"
+            },
+            {
+            "word":"bear",
+            "optionA": "tempt",
+            "optionB": "assert",
+            "optionC": "baffle",
+            "optionD": "yield",
+            "meaning": "v. to produce, to carry; to show; to endure",
+            "correctAnswer" : "yield"
+           },
+           {
+            "word":"blur",
+            "optionA": "cloud",
+            "optionB": "puzzle",
+            "optionC": "reform",
+            "optionD": "declare",
+            "meaning": "v. to make something difficult to see",
+            "correctAnswer" : "cloud"
+           },
+           {
+            "word":"brilliant",
+            "optionA": "alluring",
+            "optionB": "radiant",
+            "optionC": "astonishing",
+            "optionD":"fascinating",
+            "meaning": "adj. intensely bright or colorful; intelligent, radiant",
+            "correctAnswer" : "radiant"
+           },
+           {
+            "word":"caution",
+            "optionA": "warn",
+            "optionB": "prevent",
+            "optionC": "encourage",
+            "optionD": "bother",
+            "meaning": "v. to alert someone of danger, warn someone to take care or pay attention to something",
+            "correctAnswer" : "warn"
+           },
+           {
+            "word":"enhance",
+            "optionA": "entice",
+            "optionB": "strengthen",
+            "optionC": "relinquish",
+            "optionD": "encourage",
+            "meaning": "v. to increase in a positive way, such as in value, power, or beauty, to strengthen",
+            "correctAnswer" : "strengthen"
+           },
+           {
+            "word":"facilitate",
+            "optionA": "assist",
+            "optionB": "refine",
+            "optionC": "alter",
+            "optionD":"discard",
+            "meaning": "v. to make easier; to ease the progress of",
+            "correctAnswer" : "assist"
+           },
+           {
+            "word":"well-suited",
+            "optionA": "unique to",
+            "optionB": "compatible with",
+            "optionC": "enhanced with",
+            "optionD": "dedicated to",
+            "meaning": "adj. to be complementary or appropriate; a good match, compatible",
+            "correctAnswer" : "compatible with"
+           },
+           {
+            "word":"incessant",
+            "optionA": "unique",
+            "optionB": "constant",
+            "optionC": "blocked",
+            "optionD":"baffled",
+            "meaning": "adj. nonstop, continual, or never-ending",
+            "correctAnswer" : "constant"
+           },
+           {
+            "word":"in conjunction with",
+            "optionA": "in spite of",
+            "optionB": "because of",
+            "optionC": "along with",
+            "optionD": "except",
+            "meaning": "prep./ph. in addition to, alongside",
+            "correctAnswer" : "along with"
+           },
+           {
+            "word":"intrigue",
+            "optionA": "fascinate",
+            "optionB": "elicit",
+            "optionC": "intensify",
+            "optionD": "enrich",
+            "meaning": "v. to interest greatly, to fascinate",
+            "correctAnswer" : "fascinate"
+           },
+           {
+            "word":"obstruct",
+            "optionA": "warn",
+            "optionB": "tempt",
+            "optionC": "enhance",
+            "optionD": "block",
+            "meaning": "v. to prevent movement, progress, or success, to block",
+            "correctAnswer" : "block"
+           },
+           {
+            "word":"persuade",
+            "optionA": "assert",
+            "optionB": "convince",
+            "optionC": "restore",
+            "optionD": "yield",
+            "meaning": "v. to change a belief or behavior by argument or reason, to convince",
+            "correctAnswer" : "convince"
+           },
+           {
+            "word":"recompense",
+            "optionA": "enrichment",
+            "optionB": "appeal",
+            "optionC": "compensation",
+            "optionD": "restore",
+            "meaning": "n. a repayment or reward for a deed",
+            "correctAnswer" : "compensation"
+           },
+           {
+            "word":"shed",
+            "optionA": "heighten",
+            "optionB": "discard",
+            "optionC": "alter",
+            "optionD": "abdicate",
+            "meaning": "v. to throw off naturally; to give out, to discard",
+            "correctAnswer" : "discard"
+           },
+           {
+            "word":"unique",
+            "optionA": "determined",
+            "optionB": "warned",
+            "optionC": "vague",
+            "optionD": "rare",
+            "meaning": "adj. to be the only one of a kind; special, rare",
+            "correctAnswer" : "rare"
+           },
+           {
+            "word":"work out",
+            "optionA": "finalize",
+            "optionB": "compensate",
+            "optionC": "solve",
+            "optionD": "oppose",
+            "meaning": "v. to end or cause to end successfully; to develop",
+            "correctAnswer" : "solve"
+           }
+        ]
     }
 ]
