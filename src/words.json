@@ -792,5 +792,162 @@
             "correctAnswer" : "solve"
            }
         ]
+    },
+    {"lesson": "lesson 6",
+        "vocabulary":[
+            {
+            "word":"chiefly",
+            "optionA": "mostly",
+            "optionB": "probably",
+            "optionC": "suddenly",
+            "optionD": "apparently",
+            "meaning": "adv. the most important or most common, mostly",
+            "correctAnswer" : "mostly"
+            },
+            {
+            "word":"coarse",
+            "optionA": "visible",
+            "optionB": "tough",
+            "optionC": "rough",
+            "optionD": "smooth",
+            "meaning": "adj. not fine or smooth; not delicate, rough",
+            "correctAnswer" : "rough"
+           },
+           {
+            "word":"commonplace",
+            "optionA": "probable",
+            "optionB": "frequent",
+            "optionC": "scarce",
+            "optionD": "coarse",
+            "meaning": "adj. ordinary, frequent",
+            "correctAnswer" : "frequent"
+           },
+           {
+            "word":"complex",
+            "optionA": "alluring",
+            "optionB": "radiant",
+            "optionC": "astonishing",
+            "optionD": "complicated",
+            "meaning": "adj. difficult to understand or explain; having many parts, complicated",
+            "correctAnswer" : "complicated"
+           },
+           {
+            "word":"conventional",
+            "optionA": "arbitrary",
+            "optionB": "astounding",
+            "optionC": "traditional",
+            "optionD": "frequent",
+            "meaning": "adj. following accepted rules or standards, traditional",
+            "correctAnswer" : "traditional"
+           },
+           {
+            "word":"curious",
+            "optionA": "annoying",
+            "optionB": "brilliant",
+            "optionC": "peculiar",
+            "optionD": "enhanced",
+            "meaning": "adj. odd or strange; eager to learn, peculiar",
+            "correctAnswer" : "peculiar"
+           },
+           {
+            "word":"emit",
+            "optionA": "prevent",
+            "optionB": "release",
+            "optionC": "alter",
+            "optionD":"discard",
+            "meaning": "v. to send out; give off, to release",
+            "correctAnswer" : "release"
+           },
+           {
+            "word":"exceedingly",
+            "optionA": "resiliently",
+            "optionB": "extremely",
+            "optionC": "assertively",
+            "optionD": "resolutely",
+            "meaning": "adv. very; to an unusual degree, extremely",
+            "correctAnswer" : "extremely"
+           },
+           {
+            "word":"exclusively",
+            "optionA": "relatively",
+            "optionB": "roughly",
+            "optionC": "restrictively",
+            "optionD":"adversely",
+            "meaning": "adv. no one else; nothing else; not shared with others, restrictively",
+            "correctAnswer" : "restrictively"
+           },
+           {
+            "word":"extinguish",
+            "optionA": "terminate",
+            "optionB": "discard",
+            "optionC": "emit",
+            "optionD": "deceive",
+            "meaning": "v. to bring about the end of something, to terminate",
+            "correctAnswer" : "terminate"
+           },
+           {
+            "word":"immense",
+            "optionA": "abrupt",
+            "optionB": "massive",
+            "optionC": "ongoing",
+            "optionD": "complicated",
+            "meaning": "adj. extremely large, massive",
+            "correctAnswer" : "massive"
+           },
+           {
+            "word":"instantaneous ",
+            "optionA": "angry",
+            "optionB": "interesting",
+            "optionC": "immediate",
+            "optionD": "gigantic",
+            "meaning": "adj. occurring in an instant,immediate",
+            "correctAnswer" : "immediate"
+           },
+           {
+            "word":"rigid",
+            "optionA": "stiff",
+            "optionB": "smooth",
+            "optionC": "complicated",
+            "optionD": "immense",
+            "meaning": "adj. not easy to bend; firm; inflexible, stiff",
+            "correctAnswer" : "stiff"
+           },
+           {
+            "word":"routinely",
+            "optionA": "relatively",
+            "optionB": "sufficiently",
+            "optionC": "amazingly",
+            "optionD": "ordinarily",
+            "meaning": "adv. regularly; usually done, ordinarily",
+            "correctAnswer" : "ordinarily"
+           },
+           {
+            "word":"stamina",
+            "optionA": "courage",
+            "optionB": "indulgence",
+            "optionC": "weakness",
+            "optionD": "endurance",
+            "meaning": "n. lasting physical or mental strength, endurance",
+            "correctAnswer" : "endurance"
+           },
+           {
+            "word":"sufficiently",
+            "optionA": "adequately",
+            "optionB": "deceptively",
+            "optionC": "intensely",
+            "optionD": "rarel",
+            "meaning": "adv. enough; in a satisfying manner, adequately",
+            "correctAnswer" : "adequately"
+           },
+           {
+            "word":"visibly",
+            "optionA": "frequently",
+            "optionB": "noticeably",
+            "optionC": "persuasively",
+            "optionD": "encouragingly",
+            "meaning": "adv. can be seen, noticeably",
+            "correctAnswer" : "noticeably"
+           }
+        ]
     }
 ]
