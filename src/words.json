@@ -1106,5 +1106,162 @@
             "correctAnswer" : "hypothetically"
            }
         ]
+    },
+    {"lesson": "lesson 8",
+        "vocabulary":[
+            {
+            "word":"accelerate",
+            "optionA": "crawl",
+            "optionB": "crush",
+            "optionC": "conceal",
+            "optionD": "accelerate",
+            "meaning": "v. to go faster; to hasten",
+            "correctAnswer" : "hasten"
+            },
+            {
+            "word":"crush",
+            "optionA": "shed",
+            "optionB": "enhance",
+            "optionC": "explain",
+            "optionD": "grind",
+            "meaning": "v. to press together so as to completely distort the shape or nature of the object; to grind",
+            "correctAnswer" : "grind"
+           },
+           {
+            "word":"cultivate ",
+            "optionA": "grow",
+            "optionB": "baffle",
+            "optionC": "reveal",
+            "optionD": "hide",
+            "meaning": "v. to plant and raise a crop; to encourage growth of a relationship or friendship; to grow",
+            "correctAnswer" : "grow"
+           },
+           {
+            "word":"derive",
+            "optionA": "confirm",
+            "optionB": "bargain",
+            "optionC": "deduce",
+            "optionD": "obtain",
+            "meaning": "v. to come from or find something from its starting point; to obtain",
+            "correctAnswer" : "obtain"
+           },
+           {
+            "word":"dictate",
+            "optionA": "transport",
+            "optionB": "engender",
+            "optionC": "grow",
+            "optionD": "impose",
+            "meaning": "v. to state demands with the power to enforce; to enforce",
+            "correctAnswer" : "enforce"
+           },
+           {
+            "word":"transport",
+            "optionA": "impose",
+            "optionB": "distort",
+            "optionC": "grind",
+            "optionD": "carry",
+            "meaning": "v. to move from one place to another; to carry",
+            "correctAnswer" : "carry"
+           },
+           {
+            "word":"distinguish",
+            "optionA": "enhance",
+            "optionB": "persuade",
+            "optionC": "discriminate",
+            "optionD": "distort",
+            "meaning": "v. to hear, see, or recognize differences; to discriminate",
+            "correctAnswer" : "discriminate"
+           },
+           {
+            "word":"docile",
+            "optionA": "manageable",
+            "optionB": "relaxed",
+            "optionC": "lovable",
+            "optionD": "mundane",
+            "meaning": "adj. easy to control or train; manageable",
+            "correctAnswer" : "manageable"
+           },
+           {
+            "word":"engender",
+            "optionA": "hide",
+            "optionB": "deform",
+            "optionC": "concur",
+            "optionD":"produce",
+            "meaning": "v. to cause something new to exist; to create; to produce",
+            "correctAnswer" : "produce"
+           },
+           {
+            "word":"engross",
+            "optionA": "notice",
+            "optionB": "engage",
+            "optionC": "engender",
+            "optionD": "deform",
+            "meaning": "v. to become completely occupied or involved in an activity;to engage",
+            "correctAnswer" : "engage"
+           },
+           {
+            "word":"flaw",
+            "optionA": "particle",
+            "optionB": "agile",
+            "optionC": "defect",
+            "optionD": "creation",
+            "meaning": "n. a small sign of damage that makes an item imperfect;defect",
+            "correctAnswer" : "defect"
+           },
+           {
+            "word":"harvest",
+            "optionA": "crop",
+            "optionB": "advice",
+            "optionC": "convenience",
+            "optionD": "settlement",
+            "meaning": "n. the act of collecting a crop; the crops gathered;gather",
+            "correctAnswer" : "crop"
+           },
+           {
+            "word":"mammoth",
+            "optionA": "assertive",
+            "optionB": "enormous",
+            "optionC": "chronic",
+            "optionD": "minuscule",
+            "meaning": "adj. very large;enormous",
+            "correctAnswer" : "enormous"
+           },
+           {
+            "word":"mirror",
+            "optionA": "reflect",
+            "optionB": "produce",
+            "optionC": "confirm",
+            "optionD": "grind",
+            "meaning": "v. to show, as in a mirror;to reflect",
+            "correctAnswer" : "reflect"
+           },
+           {
+            "word":"negotiate",
+            "optionA": "persuade",
+            "optionB": "engender",
+            "optionC": "bargain",
+            "optionD": "prevent",
+            "meaning": "v. to find a middle ground, come to an agreement;to bargain",
+            "correctAnswer" : "bargain"
+           },
+           {
+            "word":"obtain",
+            "optionA": "enhance",
+            "optionB": "bargain",
+            "optionC": "impose",
+            "optionD": "gain",
+            "meaning": "v. to gain or secure something;to gain",
+            "correctAnswer" : "gain"
+           },
+           {
+            "word":"particle",
+            "optionA": "authorization",
+            "optionB": "fragment",
+            "optionC": "cultivation",
+            "optionD": "advantage",
+            "meaning": "n. a very small piece of something;fragment",
+            "correctAnswer" : "fragment"
+           }
+        ]
     }
 ]
