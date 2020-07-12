@@ -935,7 +935,7 @@
             "optionA": "adequately",
             "optionB": "deceptively",
             "optionC": "intensely",
-            "optionD": "rarel",
+            "optionD": "rarely",
             "meaning": "adv. enough; in a satisfying manner, adequately",
             "correctAnswer" : "adequately"
            },
@@ -947,6 +947,163 @@
             "optionD": "encouragingly",
             "meaning": "adv. can be seen, noticeably",
             "correctAnswer" : "noticeably"
+           }
+        ]
+    },
+    {"lesson": "lesson 7",
+        "vocabulary":[
+            {
+            "word":"brash",
+            "optionA": "distorted",
+            "optionB": "thoughtful",
+            "optionC": "reckless",
+            "optionD": "deceptive",
+            "meaning": "adj. confident or aggressive; lacking regard for consequences, reckless",
+            "correctAnswer" : "reckless"
+            },
+            {
+            "word":"clarify",
+            "optionA": "shed",
+            "optionB": "enhance",
+            "optionC": "explain",
+            "optionD": "elicit",
+            "meaning": "v. to make more easily understood; to make clear, to explain",
+            "correctAnswer" : "explain"
+           },
+           {
+            "word":"conceal",
+            "optionA": "disclose",
+            "optionB": "baffle",
+            "optionC": "reveal",
+            "optionD": "hide",
+            "meaning": "v. to prevent from being seen or discovered, to hide",
+            "correctAnswer" : "hide"
+           },
+           {
+            "word":"confirm",
+            "optionA": "allure",
+            "optionB": "prove",
+            "optionC": "astonish",
+            "optionD": "complicate",
+            "meaning": "v. to make certain; give support, to prove",
+            "correctAnswer" : "prove"
+           },
+           {
+            "word":"convenient",
+            "optionA": "arbitrary",
+            "optionB": "astounding",
+            "optionC": "traditional",
+            "optionD": "practical",
+            "meaning": "adj. easy to reach; near; suitable to one’s needs, practical",
+            "correctAnswer" : "practical"
+           },
+           {
+            "word":"core",
+            "optionA": "chief",
+            "optionB": "brilliant",
+            "optionC": "peculiar",
+            "optionD": "enhanced",
+            "meaning": "adj. the central or most important part of something, chief",
+            "correctAnswer" : "chief"
+           },
+           {
+            "word":"critical",
+            "optionA": "peculiar",
+            "optionB": "dangerous",
+            "optionC": "enhanced",
+            "optionD": "complicated",
+            "meaning": "adj. very serious or unsafe; finding fault, dangerous",
+            "correctAnswer" : "dangerous"
+           },
+           {
+            "word":"discrepancy",
+            "optionA": "critique",
+            "optionB": "inconsistency",
+            "optionC": "deliberation",
+            "optionD": "sufficiently",
+            "meaning": "n. a difference between things that should be similar or equal,inconsistency",
+            "correctAnswer" : "inconsistency"
+           },
+           {
+            "word":"distort",
+            "optionA": "hide",
+            "optionB": "deform",
+            "optionC": "concur",
+            "optionD":"block",
+            "meaning": "v. to change from the original shape or condition, usually in an unnatural way, to deform",
+            "correctAnswer" : "defrom"
+           },
+           {
+            "word":"diverse",
+            "optionA": "noticeable",
+            "optionB": "different",
+            "optionC": "conventional",
+            "optionD": "curious",
+            "meaning": "adj. various; distinct from others,different",
+            "correctAnswer" : "different"
+           },
+           {
+            "word":"eventually",
+            "optionA": "finally",
+            "optionB": "soon",
+            "optionC": "once",
+            "optionD": "consequently",
+            "meaning": "adv. to happen at some time in the future, usually gradually, finally",
+            "correctAnswer" : "finally"
+           },
+           {
+            "word":"prosperous",
+            "optionA": "thriving",
+            "optionB": "resilient",
+            "optionC": "convenient",
+            "optionD": "tolerable",
+            "meaning": "adj. successful, wealthy,thriving",
+            "correctAnswer" : "thriving"
+           },
+           {
+            "word":"purposefully ",
+            "optionA": "ordinarily",
+            "optionB": "relatively",
+            "optionC": "deliberately",
+            "optionD": "immensely",
+            "meaning": "adv. done for a special reason,deliberately",
+            "correctAnswer" : "deliberately"
+           },
+           {
+            "word":"reveal",
+            "optionA": "disclose",
+            "optionB": "baffle",
+            "optionC": "conceal",
+            "optionD": "confirm",
+            "meaning": "v. to uncover; to expose; to disclose",
+            "correctAnswer" : "disclose"
+           },
+           {
+            "word":"scarcely ",
+            "optionA": "hardly",
+            "optionB": "intensely",
+            "optionC": "patiently",
+            "optionD": "naturally",
+            "meaning": "adv. almost not; hardly",
+            "correctAnswer" : "hardly"
+           },
+           {
+            "word":"simultaneous ",
+            "optionA": "instant",
+            "optionB": "permanent",
+            "optionC": "coincidental",
+            "optionD": "concurrent",
+            "meaning": "adj. occurring at the same time; concurrent",
+            "correctAnswer" : "concurrent"
+           },
+           {
+            "word":"theoretically ",
+            "optionA": "exceedingly",
+            "optionB": "haphazardly",
+            "optionC": "hypothetically",
+            "optionD": "routinely",
+            "meaning": "adv. according to a reasoned, but not proven, point of view; hypothetically",
+            "correctAnswer" : "hypothetically"
            }
         ]
     }
