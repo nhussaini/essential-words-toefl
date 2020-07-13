@@ -1114,7 +1114,7 @@
             "optionA": "crawl",
             "optionB": "crush",
             "optionC": "conceal",
-            "optionD": "accelerate",
+            "optionD": "hasten",
             "meaning": "v. to go faster; to hasten",
             "correctAnswer" : "hasten"
             },
@@ -1151,8 +1151,8 @@
             "optionB": "engender",
             "optionC": "grow",
             "optionD": "impose",
-            "meaning": "v. to state demands with the power to enforce; to enforce",
-            "correctAnswer" : "enforce"
+            "meaning": "v. to state demands with the power to enforce; to impose",
+            "correctAnswer" : "impose"
            },
            {
             "word":"transport",
